@@ -1,0 +1,25 @@
+\section{Dynamic Programming}
+
+\subsection{Policy Evaluation}
+\begin{itemize}
+\item Computing the value function for an arbitrary policy \(\pi\). Ideally, we would do this using dynamic programming if the state-space is finite and we know the state transition perfectly.
+\end{itemize}
+
+
+\subsection{Policy Improvement}
+\begin{itemize}
+\item Take our policy and associated value function obtained through policy evaluation. Then in state s, we take a different action `a` not prescribed by our policy, follow our normal policy thereafter, and see if the value function changes. If the value of that state improves then we say that our policy has improved.
+\item If we extend this to the limit and choose to take the value-maximising action in each state we call this acting greedily with respect to our value function.
+\end{itemize}
+
+
+\subsection{Policy Iteration}
+By flipping between policy evaluation and iteration we can achieve a sequence of monotonically increasing policies and value functions. Algorithm is:
+\begin{enumerate}
+\item Evaluate policy \(\pi\) to obtain value function \(V_\pi\)
+\item Improve policy \(\pi\) by acting greedily with respect to \(V_\pi\) to obtain new policy \(\pi'\)
+\item Evaluate new policy \(\pi'\) to obtain new value function `\(V_{\pi'}\)
+\item Repeat until new policy is no longer better than the old policy, at which point we have obtained the optimal policy. (Only for finite MDPs)
+\end{enumerate}
+
+\subsection{Key Takeaways}

@@ -1,0 +1,42 @@
+\section{Monte Carlo Methods}
+\begin{itemize}
+\item If we do not have knowledge of the transition probabilities (model of the environment) then we must learn directly from experience. To do so, we use Monte Carlo methods.
+\item Monte carlo methods are most effective in episodic tasks where there is a terminal state and the value of the states visited en route to the terminal state can be updated based on the reward received at the terminal state.
+\end{itemize}
+
+\subsection{Monte Carlo Policy Evaluation}
+\begin{itemize}
+\item We run a policy in an environment for an episode. When the episode ends, we receive a reward and we assign that reward to each of the states visited en route to the terminal state. This gives us a value function for the environment obtained solely through experience.
+\end{itemize}
+
+
+\subsection{Monte Carlo Estimation of Action Values}
+\begin{itemize}
+\item With a model we only need to estimate the state value function \(V\) as, paired with our model, we can evaluate the rewards and next states for each of our actions and pick the best one.
+\item With model free methods we need to estimate the state-action value function \(Q\) as we must explicitly estimate the value of each action in order for the values to be useful in suggesting a policy. (If we only have the values of states, and don't know how states are linked through a model, then selecting the optimal action is impossible)
+\end{itemize}
+
+
+\subsection{On-policy Monte Carlo Control}
+\begin{itemize}
+\item On-policy methods attempt to improve or evaluate or improve the policy that is making decisions.
+\item On-policy control methods are generally \textit{soft} meaning that they assign non-zero probability to each possible action in a state e.g. e-greedy policies.
+\item We take actions in the environment using e-greedy policy, after each episode we back propagate the rewards to obtain the value function for our e-greedy policy. Then we perform policy improvement by updating our policy to take the \textbf{new} greedy reward in each state. Note: based on our new value function, the new greedy action may have changed in some states. Then we perform policy evaluation using our new e-greedy policy and repeat  (as per generalised policy iteration).
+\end{itemize}
+
+\subsection{Off-policy Monte Carlo Control}
+\begin{itemize}
+\item The policy used to accumulate data is different from the policy used for control
+\item The policy that generates behaviour is called the \textit{behaviour policy} and the policy that is evaluated and improved is called the \textit{estimation policy}. The advantage here is that the estimation policy could be deterministic (i.e. greedy) whilst the behaviour policy can remain stochastic such that it continues to sample all possible states
+\item Off policy methods only work if the behaviour policy has a non-zero probability of taking every action prescribed by the evaluation policy. This is achieved by using an e-soft policy like e-greedy. This is because when we do policy evaluation using the behaviour policy, we only evaluate it at the states and actions that match of estimation policy \textbf{as if the estimation policy was the one that produced the data.}
+\item Once we do policy evaluation on the data produced by the behaviour policy at points congruent with our estimation policy, we do policy improvement by updating our state-action selections of the estimation policy to be the greedy actions w.r.t. our value function.
+\end{itemize}
+
+\subsection{Key Takeaways}
+
+\item Maintaining sufficient exploration is difficult with monte carlo methods. If we select the actions currently estimated to be the best then we will likely never explore the entire state-space.
+\item To deal with this we have several options:
+\item Start every episode randomly with uniform probability such that we make sure we start at each possible state. This is called \textit{exploring starts} and is unrealistic in the real world as we can't make a robot restart from all possible states.
+\item On-policy methods: the agent commits to an e-greedy policy where it always maintains exploration
+\item Off-policy methods: The agent explores, but learns a deterministic optimal policy offline that may be unrelated to the behaviour policy used to collect the experience
+\item Differences with dynamic programming methods: 1) They do not require a model of the environment as they learn directly from experience, and 2) They do not bootstrap i.e. the value function estimates are an average of all real returns accumulated after visiting the state.
