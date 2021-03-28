@@ -1,25 +1,27 @@
 \documentclass{article}
-\usepackage[left=5cm, right=5cm, top=3cm, bottom=3cm]{geometry}
+\usepackage[left=4cm, right=4cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{amsmath}
+\usepackage{hyperref}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 \usepackage{csquotes}
+\setlength{\parindent}{0cm}
+
+\newcommand\RepoAddress{https://github.com/enjeeneer/sutton_and_barto}
+\newcommand\ProgrammingExercise{This is a programming exercise, the relevent code can be found on \href{\RepoAddress}{my GitHub}.}
 
 \title{Reinforcement Learning: An Introduction - Notes}
 \author{Scott Jeen}
 \date{\today}
 
 \begin{document}
+	
 \maketitle
-
-\include{chapter1/chapternotes}
-\include{chapter2/chapternotes}
-\include{chapter3/chapternotes}
-\include{chapter4/chapternotes}
-\include{chapter5/chapternotes}
-
+\include{chapter1/chapter1}
+\include{chapter2/chapter2}
+\include{chapter3/chapter3}
 
 \end{document}

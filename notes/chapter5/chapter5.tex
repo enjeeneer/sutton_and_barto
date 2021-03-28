@@ -33,10 +33,11 @@
 \end{itemize}
 
 \subsection{Key Takeaways}
-
+\begin{itemize}
 \item Maintaining sufficient exploration is difficult with monte carlo methods. If we select the actions currently estimated to be the best then we will likely never explore the entire state-space.
 \item To deal with this we have several options:
 \item Start every episode randomly with uniform probability such that we make sure we start at each possible state. This is called \textit{exploring starts} and is unrealistic in the real world as we can't make a robot restart from all possible states.
 \item On-policy methods: the agent commits to an e-greedy policy where it always maintains exploration
 \item Off-policy methods: The agent explores, but learns a deterministic optimal policy offline that may be unrelated to the behaviour policy used to collect the experience
 \item Differences with dynamic programming methods: 1) They do not require a model of the environment as they learn directly from experience, and 2) They do not bootstrap i.e. the value function estimates are an average of all real returns accumulated after visiting the state.
+\end{itemize}
