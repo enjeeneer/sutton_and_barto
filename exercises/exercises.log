@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  5 APR 2021 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  6 APR 2021 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**notes.tex
-(./notes.tex
+**exercises.tex
+(./exercises.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -313,26 +313,30 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count275
 \l__pdf_internal_box=\box47
 )
-(./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux)
-(./chapter3/chapter3.aux) (./chapter4/chapter4.aux))
-\openout1 = `notes.aux'.
+(./exercises.aux (./chapter1/exercises1.aux) (./chapter2/exercises2.aux)
+(./chapter3/exercises3.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Warning: Label `fig:3.20' multiply defined.
+
+) (./chapter4/exercises4.aux))
+\openout1 = `exercises.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -369,7 +373,7 @@ LaTeX Font Info:    ... okay on input line 21.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 23.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -382,12 +386,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count276
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
- (./notes.out) (./notes.out)
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
+ (./exercises.out) (./exercises.out)
 \@outlinefile=\write3
-\openout3 = `notes.out'.
+\openout3 = `exercises.out'.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -414,127 +418,224 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./notes.toc)
+) [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./exer
+cises.toc)
 \tf@toc=\write4
-\openout4 = `notes.toc'.
+\openout4 = `exercises.toc'.
 
 
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `chapter1/chapter1.aux'.
-
-
-(./chapter1/chapter1.tex) [2
+[2
 
 ]
-\openout2 = `chapter2/chapter2.aux'.
-
- (./chapter2/chapter2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
+\openout2 = `chapter1/exercises1.aux'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+No file chapter1/exercises1.tex.
+\openout2 = `chapter2/exercises2.aux'.
 
- []
+(./chapter2/exercises2.tex
 
-<../images//chapter2_1.png, id=183, 1198.4775pt x 1110.1475pt>
-File: ../images//chapter2_1.png Graphic file (type png)
-<use ../images//chapter2_1.png>
-Package pdftex.def Info: ../images//chapter2_1.png  used on input line 38.
-(pdftex.def)             Requested size: 386.67296pt x 358.16805pt.
+LaTeX Warning: Reference `table: ex2.2' on page 3 undefined on input line 31.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Warning: Reference `table: ex2.2' on page 3 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:chapter2_2' on page 3 undefined on input line 37.
+
 
 [3
 
 
-] [4 <../images//chapter2_1.png>] [5]
-<../images//chapter2_2.png, id=216, 1172.38pt x 548.0475pt>
-File: ../images//chapter2_2.png Graphic file (type png)
-<use ../images//chapter2_2.png>
-Package pdftex.def Info: ../images//chapter2_2.png  used on input line 118.
-(pdftex.def)             Requested size: 386.67296pt x 180.75587pt.
- [6 <../images//chapter2_2.png>]
-<../images//chapter2_4.png, id=226, 806.01125pt x 400.49625pt>
-File: ../images//chapter2_4.png Graphic file (type png)
-<use ../images//chapter2_4.png>
-Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
-(pdftex.def)             Requested size: 386.67296pt x 192.13213pt.
-)
-[7 <../images//chapter2_4.png>]
-\openout2 = `chapter3/chapter3.aux'.
 
- (./chapter3/chapter3.tex
-<../images//chapter3_1.png, id=234, 1110.1475pt x 318.18875pt>
-File: ../images//chapter3_1.png Graphic file (type png)
-<use ../images//chapter3_1.png>
-Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
-(pdftex.def)             Requested size: 386.67296pt x 110.8288pt.
- [8
-
-
- <../images//chapter3_1.png>] [9]
-<../images//chapter3_2.png, id=252, 1140.26pt x 393.47pt>
-File: ../images//chapter3_2.png Graphic file (type png)
-<use ../images//chapter3_2.png>
-Package pdftex.def Info: ../images//chapter3_2.png  used on input line 126.
-(pdftex.def)             Requested size: 386.67296pt x 133.4298pt.
+]
+<../images//ex2.5.png, id=234, 722.7pt x 361.35pt>
+File: ../images//ex2.5.png Graphic file (type png)
+<use ../images//ex2.5.png>
+Package pdftex.def Info: ../images//ex2.5.png  used on input line 66.
+(pdftex.def)             Requested size: 386.67296pt x 193.33412pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] [11 <../images//chapter3_2.png>]) [12]
-\openout2 = `chapter4/chapter4.aux'.
+<../images//chapter2_3.png, id=236, 903.375pt x 437.635pt>
+File: ../images//chapter2_3.png Graphic file (type png)
+<use ../images//chapter2_3.png>
+Package pdftex.def Info: ../images//chapter2_3.png  used on input line 74.
+(pdftex.def)             Requested size: 386.67296pt x 187.32462pt.
 
- (./chapter4/chapter4.tex [13
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5 <../images//ex2.5.png> <../images//chapter2_3.png>]
+
+LaTeX Warning: Reference `fig:chapter2_2' on page 6 undefined on input line 106
+.
+
+[6]) [7]
+\openout2 = `chapter3/exercises3.aux'.
+
+ (./chapter3/exercises3.tex
+Overfull \hbox (112.20755pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/m/n/10 State: In-vest-ment in each com-pany; cash bal-ance; % re-tur
+n over last minute/hour/day/week/month/year 
+ []
+
+[8
 
 
 ]
-<../images//chapter4_1.png, id=286, 415.5525pt x 40.15pt>
-File: ../images//chapter4_1.png Graphic file (type png)
-<use ../images//chapter4_1.png>
-Package pdftex.def Info: ../images//chapter4_1.png  used on input line 43.
-(pdftex.def)             Requested size: 386.67296pt x 37.36115pt.
-)
-[14 <../images//chapter4_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
- (./notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 47.
+
+[9] [10] [11]
+<../images//ex3.14.png, id=345, 850.17625pt x 274.02374pt>
+File: ../images//ex3.14.png Graphic file (type png)
+<use ../images//ex3.14.png>
+Package pdftex.def Info: ../images//ex3.14.png  used on input line 219.
+(pdftex.def)             Requested size: 386.67296pt x 124.63081pt.
 
 
-Package rerunfilecheck Warning: File `notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package rerunfilecheck Info: Checksums for `notes.out':
-(rerunfilecheck)             Before: 0CA6B4FBDC99E9C55F19446A3B1B46D1;2340
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+[12] [13 <../images//ex3.14.png>]
+<../images//ex3.17.png, id=380, 153.57375pt x 142.5325pt>
+File: ../images//ex3.17.png Graphic file (type png)
+<use ../images//ex3.17.png>
+Package pdftex.def Info: ../images//ex3.17.png  used on input line 270.
+(pdftex.def)             Requested size: 96.66823pt x 89.71982pt.
+ [14 <../images//ex3.17.png>]
+<../images//ex3.18.png, id=394, 859.21pt x 369.38pt>
+File: ../images//ex3.18.png Graphic file (type png)
+<use ../images//ex3.18.png>
+Package pdftex.def Info: ../images//ex3.18.png  used on input line 289.
+(pdftex.def)             Requested size: 386.67296pt x 166.23636pt.
+<../images//ex3.19.png, id=395, 867.24pt x 404.51125pt>
+File: ../images//ex3.19.png Graphic file (type png)
+<use ../images//ex3.19.png>
+Package pdftex.def Info: ../images//ex3.19.png  used on input line 303.
+(pdftex.def)             Requested size: 386.67296pt x 180.35567pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../images//ex3.20.png, id=396, 459.7175pt x 492.84125pt>
+File: ../images//ex3.20.png Graphic file (type png)
+<use ../images//ex3.20.png>
+Package pdftex.def Info: ../images//ex3.20.png  used on input line 317.
+(pdftex.def)             Requested size: 193.33647pt x 207.27014pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <../images//ex3.18.png>]
+
+Package caption Warning: \label without proper reference on input line 344.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:3.20' on page 16 undefined on input line 325.
+
+
+Overfull \hbox (5.66689pt too wide) in paragraph at lines 329--330
+\OT1/cmr/m/n/10 Draw or de-scribe the con-tours of the op-ti-mal action-value f
+unc-tion for putting, $\OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s;
+ []\OT1/cmr/m/n/10 )$,
+ []
+
+[16 <../images//ex3.19.png> <../images//ex3.20.png>]
+
+Package caption Warning: \label without proper reference on input line 344.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:3.20' on page 17 undefined on input line 337.
+
+<../images//ex3.22.png, id=432, 890.32625pt x 225.84375pt>
+File: ../images//ex3.22.png Graphic file (type png)
+<use ../images//ex3.22.png>
+Package pdftex.def Info: ../images//ex3.22.png  used on input line 343.
+(pdftex.def)             Requested size: 386.67296pt x 98.08615pt.
+[17 <../images//ex3.22.png>]
+Overfull \hbox (2.43468pt too wide) in paragraph at lines 392--396
+$\OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 ) = 
+[][] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s[]; r\OMS/cmsy/m/n/10
+ j\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 )[\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 + \
+OML/cmm/m/it/10 ^^M [][] q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s[]; a[]\OT1/cmr/
+m/n/10 )]$ where $\OMS/cmsy/m/n/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f[]\OML
+/cmm/m/it/10 ; []; []\OMS/cmsy/m/n/10 g$ 
+ []
+
+[18]) [19]
+\openout2 = `chapter4/exercises4.aux'.
+
+ (./chapter4/exercises4.tex [20
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+[21] [22]
+<../images//ex4.9a.png, id=544, 1084.05pt x 722.7pt>
+File: ../images//ex4.9a.png Graphic file (type png)
+<use ../images//ex4.9a.png>
+Package pdftex.def Info: ../images//ex4.9a.png  used on input line 106.
+(pdftex.def)             Requested size: 386.67296pt x 257.77882pt.
+<../images//ex4.9b.png, id=545, 1084.05pt x 722.7pt>
+File: ../images//ex4.9b.png Graphic file (type png)
+<use ../images//ex4.9b.png>
+Package pdftex.def Info: ../images//ex4.9b.png  used on input line 112.
+(pdftex.def)             Requested size: 386.67296pt x 257.77882pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23 <../images//ex4.9a.png>]) [24 <../images//ex4.9b.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+ (./exercises.aux
+(./chapter1/exercises1.aux) (./chapter2/exercises2.aux)
+(./chapter3/exercises3.aux) (./chapter4/exercises4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+Package rerunfilecheck Info: File `exercises.out' has not changed.
+(rerunfilecheck)             Checksum: 163F72D3001FB2D958130A34638C5EEE;2494.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 8951 strings out of 480608
- 136287 string characters out of 5903630
- 416802 words of memory out of 5000000
- 24583 multiletter control sequences out of 15000+600000
+ 9211 strings out of 480608
+ 139300 string characters out of 5903630
+ 417381 words of memory out of 5000000
+ 24625 multiletter control sequences out of 15000+600000
  542772 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,43p,937b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,43p,948b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -547,18 +648,19 @@ al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (14 pages, 534352 bytes).
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on exercises.pdf (24 pages, 2994454 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 281 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,62 @@
+\contentsline {section}{\numberline {1}Multi-armBandits}{3}{section.1}%
+\contentsline {subsection}{Exercise 2.1}{3}{section*.2}%
+\contentsline {subsection}{Exercise 2.2}{3}{section*.5}%
+\contentsline {subsection}{Exercise 2.3}{3}{section*.9}%
+\contentsline {subsection}{Exercise 2.4}{4}{section*.12}%
+\contentsline {subsection}{Exercise 2.5}{4}{section*.15}%
+\contentsline {subsection}{Exercise 2.6}{4}{section*.19}%
+\contentsline {subsection}{Exercise 2.7}{5}{section*.23}%
+\contentsline {subsection}{Exercise 2.8}{6}{section*.26}%
+\contentsline {subsection}{Exercise 2.9}{6}{section*.29}%
+\contentsline {subsection}{Exercise 2.10}{7}{section*.32}%
+\contentsline {section}{\numberline {2}Finite Markov Decision Processes}{8}{section.2}%
+\contentsline {subsection}{Exercise 3.1}{8}{section*.35}%
+\contentsline {subsection}{Exercise 3.2}{8}{section*.38}%
+\contentsline {subsection}{Exercise 3.3}{9}{section*.41}%
+\contentsline {subsection}{Exercise 3.4}{9}{section*.44}%
+\contentsline {subsection}{Exercise 3.5}{9}{section*.48}%
+\contentsline {subsection}{Exercise 3.6}{10}{section*.51}%
+\contentsline {subsection}{Exercise 3.7}{10}{section*.54}%
+\contentsline {subsection}{Exercise 3.8}{11}{section*.57}%
+\contentsline {subsection}{Exercise 3.9}{11}{section*.60}%
+\contentsline {subsection}{Exercise 3.10}{11}{section*.63}%
+\contentsline {subsection}{Exercise 3.11}{12}{section*.66}%
+\contentsline {subsection}{Exercise 3.12}{12}{section*.69}%
+\contentsline {subsection}{Exercise 3.13}{12}{section*.72}%
+\contentsline {subsection}{Exercise 3.14}{13}{section*.75}%
+\contentsline {subsection}{Exercise 3.15}{13}{section*.79}%
+\contentsline {subsection}{Exercise 3.16}{14}{section*.82}%
+\contentsline {subsection}{Exercise 3.17}{14}{section*.85}%
+\contentsline {subsection}{Exercise 3.18}{15}{section*.89}%
+\contentsline {subsection}{Exercise 3.19}{15}{section*.93}%
+\contentsline {subsection}{Exercise 3.20}{16}{section*.97}%
+\contentsline {subsection}{Exercise 3.21}{17}{section*.102}%
+\contentsline {subsection}{Exercise 3.22}{17}{section*.105}%
+\contentsline {subsection}{Exercise 3.23}{18}{section*.109}%
+\contentsline {subsection}{Exercise 3.24}{18}{section*.112}%
+\contentsline {subsection}{Exercise 3.25}{19}{section*.115}%
+\contentsline {subsection}{Exercise 3.26}{19}{section*.118}%
+\contentsline {subsection}{Exercise 3.27}{19}{section*.121}%
+\contentsline {subsection}{Exercise 3.28}{19}{section*.124}%
+\contentsline {subsection}{Exercise 3.29}{19}{section*.127}%
+\contentsline {section}{\numberline {3}Dynamic Programming}{20}{section.3}%
+\contentsline {subsubsection}{Q}{20}{section*.131}%
+\contentsline {subsubsection}{A}{20}{section*.132}%
+\contentsline {subsubsection}{Q}{20}{section*.134}%
+\contentsline {subsubsection}{A}{20}{section*.135}%
+\contentsline {subsubsection}{Q}{21}{section*.137}%
+\contentsline {subsubsection}{A}{21}{section*.138}%
+\contentsline {subsubsection}{Q}{21}{section*.140}%
+\contentsline {subsubsection}{A}{21}{section*.141}%
+\contentsline {subsubsection}{Q}{21}{section*.143}%
+\contentsline {subsubsection}{A}{21}{section*.144}%
+\contentsline {subsubsection}{Q}{22}{section*.146}%
+\contentsline {subsubsection}{A}{22}{section*.147}%
+\contentsline {subsubsection}{Q}{22}{section*.149}%
+\contentsline {subsubsection}{A}{22}{section*.150}%
+\contentsline {subsubsection}{Q}{23}{section*.152}%
+\contentsline {subsubsection}{A}{23}{section*.153}%
+\contentsline {subsubsection}{Q}{23}{section*.155}%
+\contentsline {subsubsection}{A}{23}{section*.156}%
+\contentsline {subsubsection}{Q}{24}{section*.160}%
+\contentsline {subsubsection}{A}{24}{section*.161}%

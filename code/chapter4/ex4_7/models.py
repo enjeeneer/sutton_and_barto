@@ -31,9 +31,9 @@ class Environment():
         self.xreq_prob = [abs(self.xreq_dist.cdf(i+1) - self.xreq_dist.cdf(i)) for i in range(self.cars + 1)]
         self.yreq_prob= [abs(self.yreq_dist.cdf(i+1) - self.yreq_dist.cdf(i)) for i in range(self.cars + 1)]
 
-        self.rental_perms = self.state_space = np.asarray(list(itertools.product(range(self.cars+1),\
+        self.rental_perms = np.asarray(list(itertools.product(range(self.cars+1),\
                                                             range(self.cars+1))))
-        self.request_perms = self.state_space = np.asarray(list(itertools.product(range(self.cars+1),\
+        self.request_perms = np.asarray(list(itertools.product(range(self.cars+1),\
                                                             range(self.cars+1))))
 
     def reset(self):
