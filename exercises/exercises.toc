@@ -60,3 +60,31 @@
 \contentsline {subsubsection}{A}{23}{section*.156}%
 \contentsline {subsubsection}{Q}{24}{section*.160}%
 \contentsline {subsubsection}{A}{24}{section*.161}%
+\contentsline {section}{\numberline {4}Monte Carlo Methods}{25}{section.4}%
+\contentsline {subsubsection}{Q}{25}{section*.163}%
+\contentsline {subsubsection}{A}{25}{section*.164}%
+\contentsline {subsubsection}{Q}{25}{section*.166}%
+\contentsline {subsubsection}{A}{25}{section*.167}%
+\contentsline {subsubsection}{Q}{25}{section*.169}%
+\contentsline {subsubsection}{A}{25}{section*.170}%
+\contentsline {subsubsection}{Q}{26}{section*.173}%
+\contentsline {subsubsection}{A}{26}{section*.174}%
+\contentsline {subsubsection}{Q}{26}{section*.176}%
+\contentsline {subsubsection}{A}{26}{section*.177}%
+\contentsline {subsubsection}{Q}{26}{section*.179}%
+\contentsline {subsubsection}{A}{26}{section*.180}%
+\contentsline {subsubsection}{Q}{27}{section*.182}%
+\contentsline {subsubsection}{A}{27}{section*.183}%
+\contentsline {subsubsection}{Q}{27}{section*.185}%
+\contentsline {subsubsection}{A}{27}{section*.186}%
+\contentsline {subsubsection}{Q}{27}{section*.188}%
+\contentsline {subsubsection}{A}{27}{section*.189}%
+\contentsline {subsubsection}{Q}{28}{section*.192}%
+\contentsline {subsubsection}{A}{28}{section*.193}%
+\contentsline {subsubsection}{Q}{28}{section*.195}%
+\contentsline {subsubsection}{A}{28}{section*.196}%
+\contentsline {subsection}{Exercise 5.12}{28}{section*.197}%
+\contentsline {subsubsection}{Q}{29}{section*.199}%
+\contentsline {subsubsection}{A}{29}{section*.200}%
+\contentsline {subsubsection}{Q}{29}{section*.202}%
+\contentsline {subsubsection}{A}{29}{section*.203}%
