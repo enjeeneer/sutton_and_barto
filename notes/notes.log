@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  6 APR 2021 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  8 APR 2021 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,7 +314,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__pdf_internal_box=\box47
 )
 (./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux)
-(./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux))
+(./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux)
+(./chapter6/chapter6.aux))
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -425,14 +426,14 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./notes.toc)
+) (./notes.toc
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `notes.toc'.
 
 
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
 \openout2 = `chapter1/chapter1.aux'.
 
@@ -451,7 +452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<../images//chapter2_1.png, id=212, 1198.4775pt x 1110.1475pt>
+<../images//chapter2_1.png, id=237, 1198.4775pt x 1110.1475pt>
 File: ../images//chapter2_1.png Graphic file (type png)
 <use ../images//chapter2_1.png>
 Package pdftex.def Info: ../images//chapter2_1.png  used on input line 38.
@@ -463,13 +464,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [5 <../images//chapter2_1.png>] [6]
-<../images//chapter2_2.png, id=245, 1172.38pt x 548.0475pt>
+<../images//chapter2_2.png, id=270, 1172.38pt x 548.0475pt>
 File: ../images//chapter2_2.png Graphic file (type png)
 <use ../images//chapter2_2.png>
 Package pdftex.def Info: ../images//chapter2_2.png  used on input line 118.
 (pdftex.def)             Requested size: 386.67296pt x 180.75587pt.
  [7 <../images//chapter2_2.png>]
-<../images//chapter2_4.png, id=256, 806.01125pt x 400.49625pt>
+<../images//chapter2_4.png, id=281, 806.01125pt x 400.49625pt>
 File: ../images//chapter2_4.png Graphic file (type png)
 <use ../images//chapter2_4.png>
 Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
@@ -479,7 +480,7 @@ Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
 \openout2 = `chapter3/chapter3.aux'.
 
  (./chapter3/chapter3.tex
-<../images//chapter3_1.png, id=263, 1110.1475pt x 318.18875pt>
+<../images//chapter3_1.png, id=288, 1110.1475pt x 318.18875pt>
 File: ../images//chapter3_1.png Graphic file (type png)
 <use ../images//chapter3_1.png>
 Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
@@ -488,7 +489,7 @@ Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
 
 
  <../images//chapter3_1.png>] [10]
-<../images//chapter3_2.png, id=281, 1140.26pt x 393.47pt>
+<../images//chapter3_2.png, id=306, 1140.26pt x 393.47pt>
 File: ../images//chapter3_2.png Graphic file (type png)
 <use ../images//chapter3_2.png>
 Package pdftex.def Info: ../images//chapter3_2.png  used on input line 126.
@@ -504,16 +505,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<../images//chapter4_1.png, id=316, 415.5525pt x 40.15pt>
+<../images//chapter4_1.png, id=341, 415.5525pt x 40.15pt>
 File: ../images//chapter4_1.png Graphic file (type png)
 <use ../images//chapter4_1.png>
 Package pdftex.def Info: ../images//chapter4_1.png  used on input line 43.
 (pdftex.def)             Requested size: 386.67296pt x 37.36115pt.
-<../images//chapter4_2.png, id=317, 516.93124pt x 324.21124pt>
+<../images//chapter4_2.png, id=342, 516.93124pt x 324.21124pt>
 File: ../images//chapter4_2.png Graphic file (type png)
 <use ../images//chapter4_2.png>
 Package pdftex.def Info: ../images//chapter4_2.png  used on input line 63.
-(pdftex.def)             Requested size: 386.67296pt x 242.52461pt.
+(pdftex.def)             Requested size: 193.33647pt x 121.25735pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -522,58 +523,82 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `chapter5/chapter5.aux'.
 
 
-(./chapter5/chapter5.tex [17
+(./chapter5/chapter5.tex
+<../images//chapter5_1.png, id=361, 104.39pt x 412.54124pt>
+File: ../images//chapter5_1.png Graphic file (type png)
+<use ../images//chapter5_1.png>
+Package pdftex.def Info: ../images//chapter5_1.png  used on input line 11.
+(pdftex.def)             Requested size: 38.66965pt x 152.82042pt.
+ [17
 
 
-]) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
- (./notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+ <../images//chapter5_1.png>] [18] [19]
+<../images//chapter5_3.png, id=380, 797.98125pt x 486.81876pt>
+File: ../images//chapter5_3.png Graphic file (type png)
+<use ../images//chapter5_3.png>
+Package pdftex.def Info: ../images//chapter5_3.png  used on input line 99.
+(pdftex.def)             Requested size: 193.33647pt x 117.9457pt.
 
 
-Package rerunfilecheck Warning: File `notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package rerunfilecheck Info: Checksums for `notes.out':
-(rerunfilecheck)             Before: A20C0341F7F6C250A8E752D43A80C4DF;2702
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
+[20] [21 <../images//chapter5_3.png>]) [22]
+\openout2 = `chapter6/chapter6.aux'.
+
+ (./chapter6/chapter6.tex
+<../images//chapter6_1.png, id=399, 95.35625pt x 169.63374pt>
+File: ../images//chapter6_1.png Graphic file (type png)
+<use ../images//chapter6_1.png>
+Package pdftex.def Info: ../images//chapter6_1.png  used on input line 15.
+(pdftex.def)             Requested size: 77.3334pt x 137.57599pt.
+) [23
+
+
+ <../images//chapter6_1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+ (./notes.aux (./chapter1/chapter1.aux)
+(./chapter2/chapter2.aux) (./chapter3/chapter3.aux) (./chapter4/chapter4.aux)
+(./chapter5/chapter5.aux) (./chapter6/chapter6.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package rerunfilecheck Info: File `notes.out' has not changed.
+(rerunfilecheck)             Checksum: FE6263EC157D96678742AE824D140922;3084.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 8986 strings out of 480608
- 136852 string characters out of 5903630
- 418260 words of memory out of 5000000
- 24600 multiletter control sequences out of 15000+600000
- 542772 words of font info for 64 fonts, out of 8000000 for 9000
+ 9064 strings out of 480608
+ 138257 string characters out of 5903630
+ 418929 words of memory out of 5000000
+ 24636 multiletter control sequences out of 15000+600000
+ 543131 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,43p,937b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,43p,1025b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (18 pages, 566877 bytes).
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on notes.pdf (23 pages, 666074 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

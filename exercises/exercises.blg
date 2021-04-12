@@ -1,17 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: exercises.aux
-A level-1 auxiliary file: chapter1/exercises1.aux
-A level-1 auxiliary file: chapter2/exercises2.aux
-A level-1 auxiliary file: chapter3/exercises3.aux
-A level-1 auxiliary file: chapter4/exercises4.aux
-A level-1 auxiliary file: chapter5/exercises5.aux
 I found no \citation commands---while reading file exercises.aux
 I found no \bibdata command---while reading file exercises.aux
 I found no \bibstyle command---while reading file exercises.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            88 strings with 607 characters,
+            83 strings with 492 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

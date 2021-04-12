@@ -111,31 +111,3 @@
 \contentsline {subsection}{Exercise 5.14}{29}{section*.201}%
 \contentsline {subsubsection}{Q}{29}{section*.202}%
 \contentsline {subsubsection}{A}{29}{section*.203}%
-\contentsline {section}{\numberline {5}Temporal-Difference Learning}{30}{section.5}%
-\contentsline {subsection}{Exercise 6.1}{30}{section*.204}%
-\contentsline {subsubsection}{Q}{30}{section*.205}%
-\contentsline {subsubsection}{A}{30}{section*.206}%
-\contentsline {subsection}{Exercise 6.2}{30}{section*.207}%
-\contentsline {subsubsection}{Q}{30}{section*.208}%
-\contentsline {subsubsection}{A}{30}{section*.209}%
-\contentsline {subsection}{Exercise 6.3}{31}{section*.210}%
-\contentsline {subsubsection}{Q}{31}{section*.211}%
-\contentsline {subsubsection}{A}{31}{section*.212}%
-\contentsline {subsection}{Exercise 6.4}{31}{section*.214}%
-\contentsline {subsubsection}{Q}{31}{section*.215}%
-\contentsline {subsubsection}{A}{31}{section*.216}%
-\contentsline {subsection}{Exercise 6.5}{32}{section*.217}%
-\contentsline {subsubsection}{Q}{32}{section*.218}%
-\contentsline {subsubsection}{A}{32}{section*.219}%
-\contentsline {subsection}{Exercise 6.6}{32}{section*.220}%
-\contentsline {subsubsection}{Q}{32}{section*.221}%
-\contentsline {subsubsection}{A}{32}{section*.222}%
-\contentsline {subsection}{Exercise 6.7}{32}{section*.223}%
-\contentsline {subsubsection}{Q}{32}{section*.224}%
-\contentsline {subsubsection}{A}{32}{section*.225}%
-\contentsline {subsection}{Exercise 6.8}{33}{section*.226}%
-\contentsline {subsubsection}{Q}{33}{section*.227}%
-\contentsline {subsubsection}{A}{33}{section*.228}%
-\contentsline {subsection}{Exercise 6.9}{33}{section*.229}%
-\contentsline {subsubsection}{Q}{33}{section*.230}%
-\contentsline {subsubsection}{A}{33}{section*.231}%

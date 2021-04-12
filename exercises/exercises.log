@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  7 APR 2021 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  9 APR 2021 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,7 +318,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 
 LaTeX Warning: Label `fig:3.20' multiply defined.
 
-) (./chapter4/exercises4.aux) (./chapter5/exercises5.aux))
+) (./chapter4/exercises4.aux) (./chapter5/exercises5.aux)
+(./chapter6/exercises6.aux))
 \openout1 = `exercises.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -429,17 +430,14 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+(./exercises.toc [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./exer
-cises.toc)
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `exercises.toc'.
 
-
-[2
-
-]
+ [2]
 \openout2 = `chapter1/exercises1.aux'.
 
 
@@ -470,7 +468,7 @@ LaTeX Warning: Reference `fig:chapter2_2' on page 3 undefined on input line 37.
 
 
 ]
-<../images//ex2.5.png, id=256, 722.7pt x 361.35pt>
+<../images//ex2.5.png, id=423, 722.7pt x 361.35pt>
 File: ../images//ex2.5.png Graphic file (type png)
 <use ../images//ex2.5.png>
 Package pdftex.def Info: ../images//ex2.5.png  used on input line 66.
@@ -479,7 +477,7 @@ Package pdftex.def Info: ../images//ex2.5.png  used on input line 66.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images//chapter2_3.png, id=258, 903.375pt x 437.635pt>
+<../images//chapter2_3.png, id=425, 903.375pt x 437.635pt>
 File: ../images//chapter2_3.png Graphic file (type png)
 <use ../images//chapter2_3.png>
 Package pdftex.def Info: ../images//chapter2_3.png  used on input line 74.
@@ -510,7 +508,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 47.
 
 [9] [10] [11]
-<../images//ex3.14.png, id=367, 850.17625pt x 274.02374pt>
+<../images//ex3.14.png, id=534, 850.17625pt x 274.02374pt>
 File: ../images//ex3.14.png Graphic file (type png)
 <use ../images//ex3.14.png>
 Package pdftex.def Info: ../images//ex3.14.png  used on input line 219.
@@ -520,18 +518,18 @@ Package pdftex.def Info: ../images//ex3.14.png  used on input line 219.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12] [13 <../images//ex3.14.png>]
-<../images//ex3.17.png, id=402, 153.57375pt x 142.5325pt>
+<../images//ex3.17.png, id=569, 153.57375pt x 142.5325pt>
 File: ../images//ex3.17.png Graphic file (type png)
 <use ../images//ex3.17.png>
 Package pdftex.def Info: ../images//ex3.17.png  used on input line 270.
 (pdftex.def)             Requested size: 96.66823pt x 89.71982pt.
  [14 <../images//ex3.17.png>]
-<../images//ex3.18.png, id=417, 859.21pt x 369.38pt>
+<../images//ex3.18.png, id=584, 859.21pt x 369.38pt>
 File: ../images//ex3.18.png Graphic file (type png)
 <use ../images//ex3.18.png>
 Package pdftex.def Info: ../images//ex3.18.png  used on input line 289.
 (pdftex.def)             Requested size: 386.67296pt x 166.23636pt.
-<../images//ex3.19.png, id=418, 867.24pt x 404.51125pt>
+<../images//ex3.19.png, id=585, 867.24pt x 404.51125pt>
 File: ../images//ex3.19.png Graphic file (type png)
 <use ../images//ex3.19.png>
 Package pdftex.def Info: ../images//ex3.19.png  used on input line 303.
@@ -540,7 +538,7 @@ Package pdftex.def Info: ../images//ex3.19.png  used on input line 303.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images//ex3.20.png, id=419, 459.7175pt x 492.84125pt>
+<../images//ex3.20.png, id=586, 459.7175pt x 492.84125pt>
 File: ../images//ex3.20.png Graphic file (type png)
 <use ../images//ex3.20.png>
 Package pdftex.def Info: ../images//ex3.20.png  used on input line 317.
@@ -571,7 +569,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:3.20' on page 17 undefined on input line 337.
 
-<../images//ex3.22.png, id=454, 890.32625pt x 225.84375pt>
+<../images//ex3.22.png, id=621, 890.32625pt x 225.84375pt>
 File: ../images//ex3.22.png Graphic file (type png)
 <use ../images//ex3.22.png>
 Package pdftex.def Info: ../images//ex3.22.png  used on input line 343.
@@ -603,12 +601,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 [21] [22]
-<../images//ex4.9a.png, id=566, 1084.05pt x 722.7pt>
+<../images//ex4.9a.png, id=726, 1084.05pt x 722.7pt>
 File: ../images//ex4.9a.png Graphic file (type png)
 <use ../images//ex4.9a.png>
 Package pdftex.def Info: ../images//ex4.9a.png  used on input line 106.
 (pdftex.def)             Requested size: 386.67296pt x 257.77882pt.
-<../images//ex4.9b.png, id=567, 1084.05pt x 722.7pt>
+<../images//ex4.9b.png, id=727, 1084.05pt x 722.7pt>
 File: ../images//ex4.9b.png Graphic file (type png)
 <use ../images//ex4.9b.png>
 Package pdftex.def Info: ../images//ex4.9b.png  used on input line 112.
@@ -622,7 +620,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./chapter5/exercises5.tex
-<../images//chapter5_2.png, id=590, 68.255pt x 303.1325pt>
+<../images//chapter5_2.png, id=747, 68.255pt x 303.1325pt>
 File: ../images//chapter5_2.png Graphic file (type png)
 <use ../images//chapter5_2.png>
 Package pdftex.def Info: ../images//chapter5_2.png  used on input line 25.
@@ -631,21 +629,61 @@ Package pdftex.def Info: ../images//chapter5_2.png  used on input line 25.
 
 
  <../images//chapter5_2.png>] [26]
-<../images//ex5.9.png, id=625, 954.56625pt x 442.65375pt>
+<../images//ex5.9.png, id=778, 954.56625pt x 442.65375pt>
 File: ../images//ex5.9.png Graphic file (type png)
 <use ../images//ex5.9.png>
 Package pdftex.def Info: ../images//ex5.9.png  used on input line 87.
-(pdftex.def)             Requested size: 193.33647pt x 89.65039pt.
- [27 <../images//ex5.9.png>] [28]) [29]
+(pdftex.def)             Requested size: 290.00471pt x 134.47897pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28 <../images//ex5.9.png>]) [29]
+\openout2 = `chapter6/exercises6.aux'.
+
+ (./chapter6/exercises6.tex
+Overfull \hbox (2.01337pt too wide) detected at line 14
+[]
+ []
+
+[30
+
+
+]
+<../images//ex6.3.png, id=834, 587.19376pt x 85.31876pt>
+File: ../images//ex6.3.png Graphic file (type png)
+<use ../images//ex6.3.png>
+Package pdftex.def Info: ../images//ex6.3.png  used on input line 34.
+(pdftex.def)             Requested size: 386.67296pt x 56.18295pt.
+ [31 <../images//ex6.3.png>] [32]
+<../images//ex6.9a.png, id=866, 166.6225pt x 102.3825pt>
+File: ../images//ex6.9a.png Graphic file (type png)
+<use ../images//ex6.9a.png>
+Package pdftex.def Info: ../images//ex6.9a.png  used on input line 133.
+(pdftex.def)             Requested size: 193.33647pt x 118.80595pt.
+<../images//ex6.9b.png, id=867, 167.62625pt x 103.38625pt>
+File: ../images//ex6.9b.png Graphic file (type png)
+<use ../images//ex6.9b.png>
+Package pdftex.def Info: ../images//ex6.9b.png  used on input line 139.
+(pdftex.def)             Requested size: 193.33647pt x 119.24345pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33] [34 <../images//ex6.9a.png> <../images//ex6.9b.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
- (./exercises.aux (./chapter1/exercises1.aux)
-(./chapter2/exercises2.aux) (./chapter3/exercises3.aux)
-(./chapter4/exercises4.aux) (./chapter5/exercises5.aux))
+ (./exercises.aux
+(./chapter1/exercises1.aux) (./chapter2/exercises2.aux)
+(./chapter3/exercises3.aux) (./chapter4/exercises4.aux)
+(./chapter5/exercises5.aux) (./chapter6/exercises6.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `exercises.out' has not changed.
-(rerunfilecheck)             Checksum: 61D72EFD9DDB9982E6CDC974666CD1ED;2610.
+(rerunfilecheck)             Checksum: 7A4F3F155578C1545EEE4A5A1999BF6E;4599.
 
 
 LaTeX Warning: There were undefined references.
@@ -656,10 +694,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 9308 strings out of 480608
- 140673 string characters out of 5903630
- 418191 words of memory out of 5000000
- 24647 multiletter control sequences out of 15000+600000
+ 9441 strings out of 480608
+ 142578 string characters out of 5903630
+ 419275 words of memory out of 5000000
+ 24709 multiletter control sequences out of 15000+600000
  542772 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,43p,948b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -667,28 +705,28 @@ Here is how much of TeX's memory you used:
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on exercises.pdf (29 pages, 3075937 bytes).
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on exercises.pdf (34 pages, 3102790 bytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
- 732 compressed objects within 8 object streams
- 344 named destinations out of 1000 (max. 500000)
- 413 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 948 compressed objects within 10 object streams
+ 402 named destinations out of 1000 (max. 500000)
+ 692 words of extra memory for PDF output out of 10000 (max. 10000000)
 

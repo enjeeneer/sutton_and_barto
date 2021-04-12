@@ -6,12 +6,13 @@ A level-1 auxiliary file: chapter2/chapter2.aux
 A level-1 auxiliary file: chapter3/chapter3.aux
 A level-1 auxiliary file: chapter4/chapter4.aux
 A level-1 auxiliary file: chapter5/chapter5.aux
+A level-1 auxiliary file: chapter6/chapter6.aux
 I found no \citation commands---while reading file notes.aux
 I found no \bibdata command---while reading file notes.aux
 I found no \bibstyle command---while reading file notes.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            88 strings with 589 characters,
+            89 strings with 610 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
