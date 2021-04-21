@@ -1,0 +1,172 @@
+\contentsline {section}{\numberline {1}Multi-armBandits}{4}{section.1}%
+\contentsline {subsection}{Exercise 2.1}{4}{section*.2}%
+\contentsline {subsection}{Exercise 2.2}{4}{section*.5}%
+\contentsline {subsection}{Exercise 2.3}{4}{section*.9}%
+\contentsline {subsection}{Exercise 2.4}{5}{section*.12}%
+\contentsline {subsection}{Exercise 2.5}{5}{section*.15}%
+\contentsline {subsection}{Exercise 2.6}{5}{section*.19}%
+\contentsline {subsection}{Exercise 2.7}{6}{section*.23}%
+\contentsline {subsection}{Exercise 2.8}{7}{section*.26}%
+\contentsline {subsection}{Exercise 2.9}{7}{section*.29}%
+\contentsline {subsection}{Exercise 2.10}{8}{section*.32}%
+\contentsline {section}{\numberline {2}Finite Markov Decision Processes}{9}{section.2}%
+\contentsline {subsection}{Exercise 3.1}{9}{section*.35}%
+\contentsline {subsection}{Exercise 3.2}{9}{section*.38}%
+\contentsline {subsection}{Exercise 3.3}{10}{section*.41}%
+\contentsline {subsection}{Exercise 3.4}{10}{section*.44}%
+\contentsline {subsection}{Exercise 3.5}{10}{section*.48}%
+\contentsline {subsection}{Exercise 3.6}{11}{section*.51}%
+\contentsline {subsection}{Exercise 3.7}{11}{section*.54}%
+\contentsline {subsection}{Exercise 3.8}{12}{section*.57}%
+\contentsline {subsection}{Exercise 3.9}{12}{section*.60}%
+\contentsline {subsection}{Exercise 3.10}{12}{section*.63}%
+\contentsline {subsection}{Exercise 3.11}{13}{section*.66}%
+\contentsline {subsection}{Exercise 3.12}{13}{section*.69}%
+\contentsline {subsection}{Exercise 3.13}{13}{section*.72}%
+\contentsline {subsection}{Exercise 3.14}{14}{section*.75}%
+\contentsline {subsection}{Exercise 3.15}{14}{section*.79}%
+\contentsline {subsection}{Exercise 3.16}{15}{section*.82}%
+\contentsline {subsection}{Exercise 3.17}{15}{section*.85}%
+\contentsline {subsection}{Exercise 3.18}{16}{section*.89}%
+\contentsline {subsection}{Exercise 3.19}{16}{section*.93}%
+\contentsline {subsection}{Exercise 3.20}{17}{section*.97}%
+\contentsline {subsection}{Exercise 3.21}{18}{section*.102}%
+\contentsline {subsection}{Exercise 3.22}{18}{section*.105}%
+\contentsline {subsection}{Exercise 3.23}{19}{section*.109}%
+\contentsline {subsection}{Exercise 3.24}{19}{section*.112}%
+\contentsline {subsection}{Exercise 3.25}{20}{section*.115}%
+\contentsline {subsection}{Exercise 3.26}{20}{section*.118}%
+\contentsline {subsection}{Exercise 3.27}{20}{section*.121}%
+\contentsline {subsection}{Exercise 3.28}{20}{section*.124}%
+\contentsline {subsection}{Exercise 3.29}{20}{section*.127}%
+\contentsline {section}{\numberline {3}Dynamic Programming}{21}{section.3}%
+\contentsline {subsection}{Exercise 4.1}{21}{section*.130}%
+\contentsline {subsubsection}{Q}{21}{section*.131}%
+\contentsline {subsubsection}{A}{21}{section*.132}%
+\contentsline {subsection}{Exercise 4.2}{21}{section*.133}%
+\contentsline {subsubsection}{Q}{21}{section*.134}%
+\contentsline {subsubsection}{A}{21}{section*.135}%
+\contentsline {subsection}{Exercise 4.3}{22}{section*.136}%
+\contentsline {subsubsection}{Q}{22}{section*.137}%
+\contentsline {subsubsection}{A}{22}{section*.138}%
+\contentsline {subsection}{Exercise 4.4}{22}{section*.139}%
+\contentsline {subsubsection}{Q}{22}{section*.140}%
+\contentsline {subsubsection}{A}{22}{section*.141}%
+\contentsline {subsection}{Exercise 4.5}{22}{section*.142}%
+\contentsline {subsubsection}{Q}{22}{section*.143}%
+\contentsline {subsubsection}{A}{22}{section*.144}%
+\contentsline {subsection}{Exercise 4.6}{23}{section*.145}%
+\contentsline {subsubsection}{Q}{23}{section*.146}%
+\contentsline {subsubsection}{A}{23}{section*.147}%
+\contentsline {subsection}{Exercise 4.7}{23}{section*.148}%
+\contentsline {subsubsection}{Q}{23}{section*.149}%
+\contentsline {subsubsection}{A}{23}{section*.150}%
+\contentsline {subsection}{Exercise 4.8}{24}{section*.151}%
+\contentsline {subsubsection}{Q}{24}{section*.152}%
+\contentsline {subsubsection}{A}{24}{section*.153}%
+\contentsline {subsection}{Exercise 4.9}{24}{section*.154}%
+\contentsline {subsubsection}{Q}{24}{section*.155}%
+\contentsline {subsubsection}{A}{24}{section*.156}%
+\contentsline {subsection}{Exercise 4.10}{25}{section*.159}%
+\contentsline {subsubsection}{Q}{25}{section*.160}%
+\contentsline {subsubsection}{A}{25}{section*.161}%
+\contentsline {section}{\numberline {4}Monte Carlo Methods}{26}{section.4}%
+\contentsline {subsection}{Exercise 5.1}{26}{section*.162}%
+\contentsline {subsubsection}{Q}{26}{section*.163}%
+\contentsline {subsubsection}{A}{26}{section*.164}%
+\contentsline {subsection}{Exercise 5.2}{26}{section*.165}%
+\contentsline {subsubsection}{Q}{26}{section*.166}%
+\contentsline {subsubsection}{A}{26}{section*.167}%
+\contentsline {subsection}{Exercise 5.3}{26}{section*.168}%
+\contentsline {subsubsection}{Q}{26}{section*.169}%
+\contentsline {subsubsection}{A}{26}{section*.170}%
+\contentsline {subsection}{Exercise 5.4}{27}{section*.172}%
+\contentsline {subsubsection}{Q}{27}{section*.173}%
+\contentsline {subsubsection}{A}{27}{section*.174}%
+\contentsline {subsection}{Exercise 5.5}{27}{section*.175}%
+\contentsline {subsubsection}{Q}{27}{section*.176}%
+\contentsline {subsubsection}{A}{27}{section*.177}%
+\contentsline {subsection}{Exercise 5.6}{27}{section*.178}%
+\contentsline {subsubsection}{Q}{27}{section*.179}%
+\contentsline {subsubsection}{A}{27}{section*.180}%
+\contentsline {subsection}{Exercise 5.7}{28}{section*.181}%
+\contentsline {subsubsection}{Q}{28}{section*.182}%
+\contentsline {subsubsection}{A}{28}{section*.183}%
+\contentsline {subsection}{Exercise 5.8}{28}{section*.184}%
+\contentsline {subsubsection}{Q}{28}{section*.185}%
+\contentsline {subsubsection}{A}{28}{section*.186}%
+\contentsline {subsection}{Exercise 5.9}{28}{section*.187}%
+\contentsline {subsubsection}{Q}{28}{section*.188}%
+\contentsline {subsubsection}{A}{28}{section*.189}%
+\contentsline {subsection}{Exercise 5.10}{29}{section*.191}%
+\contentsline {subsubsection}{Q}{29}{section*.192}%
+\contentsline {subsubsection}{A}{29}{section*.193}%
+\contentsline {subsection}{Exercise 5.11}{29}{section*.194}%
+\contentsline {subsubsection}{Q}{29}{section*.195}%
+\contentsline {subsubsection}{A}{30}{section*.196}%
+\contentsline {subsection}{Exercise 5.12}{30}{section*.197}%
+\contentsline {subsection}{Exercise 5.13}{30}{section*.198}%
+\contentsline {subsubsection}{Q}{30}{section*.199}%
+\contentsline {subsubsection}{A}{30}{section*.200}%
+\contentsline {subsection}{Exercise 5.14}{30}{section*.201}%
+\contentsline {subsubsection}{Q}{30}{section*.202}%
+\contentsline {subsubsection}{A}{30}{section*.203}%
+\contentsline {section}{\numberline {5}Temporal-Difference Learning}{31}{section.5}%
+\contentsline {subsection}{Exercise 6.1}{31}{section*.204}%
+\contentsline {subsubsection}{Q}{31}{section*.205}%
+\contentsline {subsubsection}{A}{31}{section*.206}%
+\contentsline {subsection}{Exercise 6.2}{31}{section*.207}%
+\contentsline {subsubsection}{Q}{31}{section*.208}%
+\contentsline {subsubsection}{A}{31}{section*.209}%
+\contentsline {subsection}{Exercise 6.3}{32}{section*.210}%
+\contentsline {subsubsection}{Q}{32}{section*.211}%
+\contentsline {subsubsection}{A}{32}{section*.212}%
+\contentsline {subsection}{Exercise 6.4}{32}{section*.214}%
+\contentsline {subsubsection}{Q}{32}{section*.215}%
+\contentsline {subsubsection}{A}{32}{section*.216}%
+\contentsline {subsection}{Exercise 6.5}{33}{section*.217}%
+\contentsline {subsubsection}{Q}{33}{section*.218}%
+\contentsline {subsubsection}{A}{33}{section*.219}%
+\contentsline {subsection}{Exercise 6.6}{33}{section*.220}%
+\contentsline {subsubsection}{Q}{33}{section*.221}%
+\contentsline {subsubsection}{A}{33}{section*.222}%
+\contentsline {subsection}{Exercise 6.7}{33}{section*.223}%
+\contentsline {subsubsection}{Q}{33}{section*.224}%
+\contentsline {subsubsection}{A}{33}{section*.225}%
+\contentsline {subsection}{Exercise 6.8}{34}{section*.226}%
+\contentsline {subsubsection}{Q}{34}{section*.227}%
+\contentsline {subsubsection}{A}{34}{section*.228}%
+\contentsline {subsection}{Exercise 6.9}{34}{section*.229}%
+\contentsline {subsubsection}{Q}{34}{section*.230}%
+\contentsline {subsubsection}{A}{34}{section*.231}%
+\contentsline {subsection}{Exercise 6.10}{35}{section*.234}%
+\contentsline {subsubsection}{Q}{35}{section*.235}%
+\contentsline {subsubsection}{A}{35}{section*.236}%
+\contentsline {subsection}{Exercise 6.11}{35}{section*.237}%
+\contentsline {subsubsection}{Q}{35}{section*.238}%
+\contentsline {subsubsection}{A}{35}{section*.239}%
+\contentsline {subsection}{Exercise 6.12}{36}{section*.240}%
+\contentsline {subsubsection}{Q}{36}{section*.241}%
+\contentsline {subsubsection}{A}{36}{section*.242}%
+\contentsline {subsection}{Exercise 6.13}{36}{section*.243}%
+\contentsline {subsubsection}{Q}{36}{section*.244}%
+\contentsline {subsubsection}{A}{36}{section*.245}%
+\contentsline {subsection}{Exercise 6.14}{36}{section*.246}%
+\contentsline {subsubsection}{Q}{36}{section*.247}%
+\contentsline {subsubsection}{A}{37}{section*.248}%
+\contentsline {section}{\numberline {6}$n$-step Bootstrapping}{38}{section.6}%
+\contentsline {subsection}{Exercise 7.1}{38}{section*.249}%
+\contentsline {subsubsection}{Q}{38}{section*.250}%
+\contentsline {subsubsection}{A}{38}{section*.251}%
+\contentsline {subsection}{Exercise 7.2}{38}{section*.252}%
+\contentsline {subsubsection}{Q}{38}{section*.253}%
+\contentsline {subsubsection}{A}{38}{section*.254}%
+\contentsline {subsection}{Exercise 7.3}{39}{section*.255}%
+\contentsline {subsubsection}{Q}{39}{section*.256}%
+\contentsline {subsubsection}{A}{39}{section*.257}%
+\contentsline {subsection}{Exercise 7.4}{39}{section*.258}%
+\contentsline {subsubsection}{Q}{39}{section*.259}%
+\contentsline {subsubsection}{A}{39}{section*.260}%
+\contentsline {subsection}{Exercise 7.5}{40}{section*.261}%
+\contentsline {subsubsection}{Q}{40}{section*.262}%
+\contentsline {subsubsection}{A}{40}{section*.263}%

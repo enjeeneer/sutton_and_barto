@@ -8,7 +8,7 @@ Equation 6.5 becomes: $\delta_t = R_{t+1} + \gamma V_t(S_{t+1}) - V_t(S_t)$ and 
 \begin{align}
 G_t - V_t(S_t) &= R_{t+1} + \gamma G_{t+1} - V_t(S_t) + \gamma V_t(S_{t+1}) - \gamma V_t(S_{t+1}) \\
 &= \delta_t + \gamma(G_{t+1} - V_t(S_{t+1})) \\
-&= \delta_t + \gamma(G_{t+1} - V_{t+1}(S_{t+1})) + \gamma \theta_{t+1}, \text{with} \theta_{t} = \alpha \left[R_{t+1} + \gamma V_t(S_{t+1} - V_t(S_t))\right] \\
+&= \delta_t + \gamma(G_{t+1} - V_{t+1}(S_{t+1})) + \gamma \theta_{t+1}, \text{with} \; \theta_{t} = \alpha \left[R_{t+1} + \gamma V_t(S_{t+1} - V_t(S_t))\right] \\
 &= \delta_t + \gamma \delta_{t+1} + \gamma^2(G_{t+2} - V_{t+2}(S_{t+2})) + \gamma \theta_{t+1} + \gamma^2 \theta_{t+2} \\
 &= \sum_{k=t}^{T-1} \left[\gamma^{k-t} \delta_k + \gamma^{k-t+1} \theta_{k+1}\right]
 \end{align}
@@ -97,7 +97,7 @@ We assume an episode of experience is produced by our behaviour policy $b$, and 
 V_\pi(s) = V_\pi(s) + \alpha \left[\rho_{t:t} R_{t+1} + \rho_{t:t} \gamma V(s') - V(s)\right], 
 \end{equation}
 
-i.e. each update is weighted by the likelihood of the action being taken by the target policy compared to the behaviour policy, divided by sum of all previous importance samples.
+i.e. each update is weighted by the likelihood of the action being taken by the target policy compared to the behaviour policy, divided by sum of all previous importance samples.\\
 $
 \hfill \blacksquare
 $
@@ -126,7 +126,8 @@ $
 \subsubsection{Q}
 Re-solve the windy gridworld assuming eight possible actions, including the diagonal moves, rather than four. How much better can you do with the extra actions? Can you do even better by including a ninth action that causes no movement at all other than that caused by the wind?
 \subsubsection{A}
-\ProgrammingExercise
+\ProgrammingExercise \\
+
 With the extra actions, the optimal policy is now 7 moves as opposed to 15 moves with 4 actions. Adding the 9th action does not improve the optimal policy, the terminal square is 7 moves away from the start square and so adding an action that keeps the agent stationary cannot improve the policy. See Figures \ref{fig:ex6.9a} and \ref{fig:ex6.9b} plot the optimal policy for 4 and 8 actions respectively. Each agent learned from 10,000 episodes of self-play.
 \begin{figure}[h!]
 	\centering
@@ -140,6 +141,62 @@ With the extra actions, the optimal policy is now 7 moves as opposed to 15 moves
 	\caption{Optimal policy with 8 available actions}
 	\label{fig:ex6.9b}
 \end{figure}
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 6.10}
+\subsubsection{Q}
+Re-solve the windy gridworld task with King’s moves, assuming that the effect of the wind, if there is any, is stochastic, sometimes varying by 1 from the mean values given for each column. That is, a third of the time you move exactly according to these values, as in the previous exercise, but also a third of the time you move one cell above that, and another third of the time you move one cell below that. For example, if you are one cell to the right of the goal and you move left, then one-third of the time you move one cell above the goal, one-third of the time you move two cells above the goal, and one-third of the time you move to the goal.
+\subsubsection{A}
+Implementation is identical to above with amended transition function. Exercise not yet completed.
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 6.11}
+\subsubsection{Q}
+Why is Q-learning considered an \textit{off-policy} control method?
+\subsubsection{A}
+Q-learning is off-policy because the action-selection at $S_{t+1}$ (used for the Q-update) is deterministic i.e. it chooses the greedy action with probability 1. This is in contrast with the behaviour policy used to collect the data which is $\epsilon$-greedy. The policy being updated is therefore different from that being used to collect data, and the algorithm is off-policy.\\
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 6.12}
+\subsubsection{Q}
+Suppose action selection is greedy. Is Q-learning then exactly the same algorithm as SARSA? Will they make exactly the same action selections and weight updates?
+\subsubsection{A}
+If action-selection is greedy, the algorithms become identical, but the action selections and weight updates may differ depending on the arbitrary initialisation of $Q$ and $S$. For example, if each state-action pair is assigned a random value $Q(S, A) \in (0,1]$, the greedy action selection in each case will differ. Because action selection differs, updates differ, and because neither algorithm explore, there is no guarantee they will converge on the same solution.
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 6.13}
+\subsubsection{Q}
+What are the update equations for Double Expected Sarsa with an $\epsilon$-greedy target policy?
+\subsubsection{A}
+Instead of taking the maximum action over $Q$, we continue to follow our $\epsilon$-greedy behaviour policy. The expected sarsa update is:
+\begin{equation}
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \sum_{a} \pi(a | S_{t+1}) Q(S_{t+1}, a) - Q(S_t, A_t) \right] \\
+\end{equation}
+Therefore our updates become:
+\begin{align}
+Q_1(S_t, A_t) &\leftarrow Q_1(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \sum_{a} \pi(a | S_{t+1}) Q_2(S_{t+1}, a) - Q_1(S_t, A_t) \right]  \\
+Q_2(S_t, A_t) &\leftarrow Q_2(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \sum_{a} \pi(a | S_{t+1}) Q_1(S_{t+1}, a) - Q_2(S_t, A_t) \right]
+\end{align}
+with our policy $\pi$ being $\epsilon$-greedy.
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 6.14}
+\subsubsection{Q}
+Describe how the task of Jack’s Car Rental (Example 4.2) could be reformulated in terms of afterstates. Why, in terms of this specific task, would such a reformulation be likely to speed convergence?
+\subsubsection{A}
+In Jack's car rental example we each location can hold cars in the range (0,20). Up to 5 cars can be moved from one location to the other overnight to accommodate expected sales, taking one of these actions will move us deterministically to a new state. If there was uncertainty in how we transition between states, it makes sense to learn a conventional value function that probabilistically accounts for this uncertainty, but given the transition is certain, we can learn the afterstates (the states from which we will sell the cars in the morning) and proceed.
+
+We speed convergence by reducing the number of states to be evaluated. For example, if our state in the evening is five cars at each location: $(5,5)$ and our action is to move one car to the second location such that our morning state becomes $(4,6)$, we can evaluate this state as the same as the state-action pair of $(4,6)$ and choosing to move no cars.
 $
 \hfill \blacksquare
 $

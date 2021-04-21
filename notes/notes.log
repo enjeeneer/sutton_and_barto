@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  8 APR 2021 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  16 APR 2021 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,7 +315,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 )
 (./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux)
 (./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux)
-(./chapter6/chapter6.aux))
+(./chapter6/chapter6.aux) (./chapter7/chapter7.aux) (./chapter8/chapter8.aux))
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -429,12 +429,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./notes.toc
 [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (4.35794pt too wide) in paragraph at lines 56--56
+ [][] [][]\OT1/cmr/m/n/10 Off-policy Learn-ing With-out Im-por-tance Sam-pling:
+ The $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 -step Tree Backup 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `notes.toc'.
 
-
-[2]
+ [2]
 \openout2 = `chapter1/chapter1.aux'.
 
  (./chapter1/chapter1.tex) [3
@@ -452,7 +457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<../images//chapter2_1.png, id=237, 1198.4775pt x 1110.1475pt>
+<../images//chapter2_1.png, id=334, 1198.4775pt x 1110.1475pt>
 File: ../images//chapter2_1.png Graphic file (type png)
 <use ../images//chapter2_1.png>
 Package pdftex.def Info: ../images//chapter2_1.png  used on input line 38.
@@ -464,13 +469,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [5 <../images//chapter2_1.png>] [6]
-<../images//chapter2_2.png, id=270, 1172.38pt x 548.0475pt>
+<../images//chapter2_2.png, id=367, 1172.38pt x 548.0475pt>
 File: ../images//chapter2_2.png Graphic file (type png)
 <use ../images//chapter2_2.png>
 Package pdftex.def Info: ../images//chapter2_2.png  used on input line 118.
 (pdftex.def)             Requested size: 386.67296pt x 180.75587pt.
  [7 <../images//chapter2_2.png>]
-<../images//chapter2_4.png, id=281, 806.01125pt x 400.49625pt>
+<../images//chapter2_4.png, id=378, 806.01125pt x 400.49625pt>
 File: ../images//chapter2_4.png Graphic file (type png)
 <use ../images//chapter2_4.png>
 Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
@@ -480,7 +485,7 @@ Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
 \openout2 = `chapter3/chapter3.aux'.
 
  (./chapter3/chapter3.tex
-<../images//chapter3_1.png, id=288, 1110.1475pt x 318.18875pt>
+<../images//chapter3_1.png, id=385, 1110.1475pt x 318.18875pt>
 File: ../images//chapter3_1.png Graphic file (type png)
 <use ../images//chapter3_1.png>
 Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
@@ -489,7 +494,7 @@ Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
 
 
  <../images//chapter3_1.png>] [10]
-<../images//chapter3_2.png, id=306, 1140.26pt x 393.47pt>
+<../images//chapter3_2.png, id=403, 1140.26pt x 393.47pt>
 File: ../images//chapter3_2.png Graphic file (type png)
 <use ../images//chapter3_2.png>
 Package pdftex.def Info: ../images//chapter3_2.png  used on input line 126.
@@ -505,12 +510,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<../images//chapter4_1.png, id=341, 415.5525pt x 40.15pt>
+<../images//chapter4_1.png, id=437, 415.5525pt x 40.15pt>
 File: ../images//chapter4_1.png Graphic file (type png)
 <use ../images//chapter4_1.png>
 Package pdftex.def Info: ../images//chapter4_1.png  used on input line 43.
 (pdftex.def)             Requested size: 386.67296pt x 37.36115pt.
-<../images//chapter4_2.png, id=342, 516.93124pt x 324.21124pt>
+<../images//chapter4_2.png, id=438, 516.93124pt x 324.21124pt>
 File: ../images//chapter4_2.png Graphic file (type png)
 <use ../images//chapter4_2.png>
 Package pdftex.def Info: ../images//chapter4_2.png  used on input line 63.
@@ -524,7 +529,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./chapter5/chapter5.tex
-<../images//chapter5_1.png, id=361, 104.39pt x 412.54124pt>
+<../images//chapter5_1.png, id=458, 104.39pt x 412.54124pt>
 File: ../images//chapter5_1.png Graphic file (type png)
 <use ../images//chapter5_1.png>
 Package pdftex.def Info: ../images//chapter5_1.png  used on input line 11.
@@ -533,7 +538,7 @@ Package pdftex.def Info: ../images//chapter5_1.png  used on input line 11.
 
 
  <../images//chapter5_1.png>] [18] [19]
-<../images//chapter5_3.png, id=380, 797.98125pt x 486.81876pt>
+<../images//chapter5_3.png, id=477, 797.98125pt x 486.81876pt>
 File: ../images//chapter5_3.png Graphic file (type png)
 <use ../images//chapter5_3.png>
 Package pdftex.def Info: ../images//chapter5_3.png  used on input line 99.
@@ -546,32 +551,164 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `chapter6/chapter6.aux'.
 
  (./chapter6/chapter6.tex
-<../images//chapter6_1.png, id=399, 95.35625pt x 169.63374pt>
+<../images//chapter6_1.png, id=497, 95.35625pt x 169.63374pt>
 File: ../images//chapter6_1.png Graphic file (type png)
 <use ../images//chapter6_1.png>
 Package pdftex.def Info: ../images//chapter6_1.png  used on input line 15.
 (pdftex.def)             Requested size: 77.3334pt x 137.57599pt.
-) [23
+<../images//chapter6_2.png, id=499, 854.19125pt x 340.27126pt>
+File: ../images//chapter6_2.png Graphic file (type png)
+<use ../images//chapter6_2.png>
+Package pdftex.def Info: ../images//chapter6_2.png  used on input line 27.
+(pdftex.def)             Requested size: 386.67296pt x 154.02927pt.
 
 
- <../images//chapter6_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
- (./notes.aux (./chapter1/chapter1.aux)
-(./chapter2/chapter2.aux) (./chapter3/chapter3.aux) (./chapter4/chapter4.aux)
-(./chapter5/chapter5.aux) (./chapter6/chapter6.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23
+
+
+ <../images//chapter6_1.png>] [24 <../images//chapter6_2.png>] [25])
+[26]
+\openout2 = `chapter7/chapter7.aux'.
+
+ (./chapter7/chapter7.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 4.
+
+<../images//chapter7_1.png, id=531, 567.11874pt x 506.89375pt>
+File: ../images//chapter7_1.png Graphic file (type png)
+<use ../images//chapter7_1.png>
+Package pdftex.def Info: ../images//chapter7_1.png  used on input line 17.
+(pdftex.def)             Requested size: 270.66988pt x 241.92949pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 29.
+
+[27
+
+
+ <../images//chapter7_1.png>]
+<../images//chapter7_2.png, id=543, 864.22874pt x 529.98pt>
+File: ../images//chapter7_2.png Graphic file (type png)
+<use ../images//chapter7_2.png>
+Package pdftex.def Info: ../images//chapter7_2.png  used on input line 37.
+(pdftex.def)             Requested size: 270.66988pt x 165.98224pt.
+<../images//chapter7_3.png, id=545, 927.465pt x 271.0125pt>
+File: ../images//chapter7_3.png Graphic file (type png)
+<use ../images//chapter7_3.png>
+Package pdftex.def Info: ../images//chapter7_3.png  used on input line 45.
+(pdftex.def)             Requested size: 309.33954pt x 90.39378pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+[28 <../images//chapter7_2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 75.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 75.
+
+[29 <../images//chapter7_3.png>]
+<../images//chapter7_4.png, id=573, 252.945pt x 800.9925pt>
+File: ../images//chapter7_4.png Graphic file (type png)
+<use ../images//chapter7_4.png>
+Package pdftex.def Info: ../images//chapter7_4.png  used on input line 95.
+(pdftex.def)             Requested size: 96.66823pt x 306.11586pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+<../images//chapter7_5.png, id=575, 832.10875pt x 576.1525pt>
+File: ../images//chapter7_5.png Graphic file (type png)
+<use ../images//chapter7_5.png>
+Package pdftex.def Info: ../images//chapter7_5.png  used on input line 105.
+(pdftex.def)             Requested size: 290.00471pt x 200.79483pt.
+[30 <../images//chapter7_4.png>]) [31 <../images//chapter7_5.png>]
+\openout2 = `chapter8/chapter8.aux'.
+
+
+(./chapter8/chapter8.tex
+<../images//chapter8_1.png, id=590, 894.34125pt x 90.3375pt>
+File: ../images//chapter8_1.png Graphic file (type png)
+<use ../images//chapter8_1.png>
+Package pdftex.def Info: ../images//chapter8_1.png  used on input line 17.
+(pdftex.def)             Requested size: 386.67296pt x 39.05801pt.
+<../images//chapter8_2.png, id=593, 562.1pt x 438.63875pt>
+File: ../images//chapter8_2.png Graphic file (type png)
+<use ../images//chapter8_2.png>
+Package pdftex.def Info: ../images//chapter8_2.png  used on input line 31.
+(pdftex.def)             Requested size: 193.33647pt x 150.8687pt.
+<../images//chapter8_3.png, id=594, 464.73625pt x 338.26375pt>
+File: ../images//chapter8_3.png Graphic file (type png)
+<use ../images//chapter8_3.png>
+Package pdftex.def Info: ../images//chapter8_3.png  used on input line 38.
+(pdftex.def)             Requested size: 193.33647pt x 140.71748pt.
+) [32
+
+
+ <../images//chapter8_1.png>] [33 <../images//chapter8_2.png> <../images//chapt
+er8_3.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+ (./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux) (./chapter3/c
+hapter3.aux) (./chapter4/chapter4.aux)
+(./chapter5/chapter5.aux) (./chapter6/chapter6.aux) (./chapter7/chapter7.aux)
+(./chapter8/chapter8.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: FE6263EC157D96678742AE824D140922;3084.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
+(rerunfilecheck)             Checksum: 20A18E7E9D1DF619B0935F2AB8240BE1;4585.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 9064 strings out of 480608
- 138257 string characters out of 5903630
- 418929 words of memory out of 5000000
- 24636 multiletter control sequences out of 15000+600000
- 543131 words of font info for 65 fonts, out of 8000000 for 9000
+ 9252 strings out of 480608
+ 141660 string characters out of 5903630
+ 421762 words of memory out of 5000000
+ 24744 multiletter control sequences out of 15000+600000
+ 544378 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,43p,1025b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -580,25 +717,27 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (23 pages, 666074 bytes).
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on notes.pdf (33 pages, 964987 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
- 387 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 718 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 584 words of extra memory for PDF output out of 10000 (max. 10000000)
 

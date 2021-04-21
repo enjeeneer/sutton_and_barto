@@ -52,8 +52,43 @@ For on-policy control, we wish to learn the state-action value function for our 
 Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha \left[R_{t+1} + \gamma Q(S_{t+1}, A_{t+1}) - Q(S_t, A_t) \right]
 \end{equation}
 
-This produces a quintuple of events: $(S_t, A_t, R_{t+1}, S_{}t+1}, A_{t+1})$ giving rise to the name SARSA. As with other on-policy control algorithms, we update our policy to be greedy w.r.t our ever-changing value function. 
+This produces a quintuple of events: $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1})$ giving rise to the name SARSA. As with other on-policy control algorithms, we update our policy to be greedy w.r.t our ever-changing value function.
 
+\subsection{Q-learning: Off-policy TD Control}
+Q-learning, much like SARSA, makes 1-step updates to the value function, but does so in subtly different ways. SARSA is on-policy, meaning it learns the optimal version of the policy used for collecting data i.e. an $\epsilon$-greedy policy to ensure the state-space is covered. This limits its performance as it needs to account for the stochasticity of exploration with probability $\epsilon$. Q-learning, on the other hand, is off-policy and directly predicts the optimal value function $q_*$ whilst using an $\epsilon$-greedy policy for exploration. Updates to the state-action value function are performed as follows:
+\begin{equation}
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \max_{a} Q(S_{t+1}, a) - Q(S_t, A_t) \right]
+\end{equation}
+
+We observe that the max action selection at next state $S_{t+1}$ means we are no longer following an $\epsilon$-greedy policy for our updates. Q-learning has been shown to converge to $q_*$ with probability 1.
+
+\subsection{Expected Sarsa}
+Instead of updating our value function with the value maximising action at $S_{t+1}$ (as is the case with Q-learning) or with the action prescribes by our $\epsilon$-greedy policy (as is the case with SARSA), we could make updates based on the \textit{expected value} of $Q$ at $S_{t+1}$. This is the premise of expected sarsa. Doing so reduces the variance induced by selecting random actions according to an $\epsilon$-greedy policy. It's update is described by:
+\begin{align}
+Q(S_t, A_t) &\leftarrow Q(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \mathbb{E}_\pi Q(S_{t+1}, A_{t+1} | S_{t+1}) - Q(S_t, A_t) \right] \\
+&\leftarrow Q(S_t, A_t) + \alpha \left[R_{t+1} + \gamma \sum_{a} \pi(a | S_{t+1}) Q(S_{t+1}, a) - Q(S_t, A_t) \right] \\
+\end{align}
+
+We can adapt expected SARSA to be off-policy by making our target policy $\pi$ greedy, in which case expected SARSA becomes Q-learning. It is therefore seen as a generalisation of Q-learning that reliably improves over SARSA.
+
+\subsection{Maximization Bias and Double Learning}
+Many of the algorithms discussed so far in these notes use a maximisation operator to select actions - either $\epsilon$-greedy or greedy action selection. Doing so means we implicitly favour positive numbers. If the true values of state action pairs are all zero i.e. $Q(S,A) = 0 \forall \; s, a$, then, at some stage in learning, we are likely to have distributed value estimates around 0. Our maximisation operator will select the postive value estimates, despite the latent values being 0. Thus we bias positive values, a so-called \textit{maximisation bias}.
+
+We can counter this by learning two estimates of the value function $Q_1$ and $Q_2$. We use one to select actions from a state e.g. $A^* = \argmax_a Q_1(a)$ and then use the other to provide an estimate of its value $Q_2(A^*) = Q_2(\argmax_a Q_1(a))$. This estimate will be unbiased in the sense that $\mathbb{E}\left[Q_2(A^*)\right] = q(A^*)$. 
+
+\subsection{Games, Afterstates, and Other Special Cases}
+Much of the theory in this book revolves around action-value functions, where the value of an action in a given state is quantified \textbf{before} the action is taken. In some settings, it is expedient to quantify value functions after an action, as many actions may lead to the same state afterward. This is the case for the game tic-tac-toe, as described in the book. In certain circumstances, it can be beneficial to amend value functions to accommodate afterstates if this property is shown.
+
+\subsection{Key Takeaways}
+\begin{itemize}
+	\item TD methods update value functions en-route to episode termination, rather than waiting to the end of the episode like Monte Carlo methods. Updates to the value function are made in proportion to the \textit{temporal differences} between value function estimates.
+	\item TD methods bootstrap off of value function estimates elsewhere in the state space, and consequently generalise to new data better than MC methods, which cannot make predictions outside of the observed training data.
+	\item TD methods continue to follow the framework of Generalised Policy Iteration (GPI) as discussed in previous chapters.
+	\item SARSA is the eminent on-policy TD method, but is limited in that in can only ever learn the optimal $\epsilon$-soft behaviour policy.
+	\item Q-learning is the eminent off-policy TD method, that will learn the optimal policy $\pi_*$ with probability 1.
+	\item Expected SARSA makes updates based on the expected value of the next state given a policy, reducing the variance induced by an $\epsilon$-soft behaviour policy, performing better than SARSA given the same experience.
+	\item The postive bias of action selection via maximisation can be mitigated by double learning methods.
+\end{itemize}
 
 
 

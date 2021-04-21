@@ -57,7 +57,7 @@ We face a dilemma when learning control: we want to find the optimal policy, but
 
 where $p$ is the state transition probability function. We can then obtain the relative probability of the trajectory under the target and behaviour policies (the importance sampling ratio) as:
 
-\begin{equation}
+\begin{equation} \label{eq: importance sampling ratio}
 p_{t:T-1} = \frac{\prod_{k=t}^{T-1} \pi(A_k|S_k)p(S_{k+1}|S_k, A_k)}{\prod_{k=t}^{T-1} b(A_k|S_k)p(S_{k+1}|S_k, A_k)} = \prod_{k=t}^{T-1} \frac{\pi(A_k|S_k)}{b(A_k|S_k)}
 \end{equation}
 
