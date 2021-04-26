@@ -59,3 +59,32 @@
 \BOOKMARK [1][-]{section.8}{Planning and Learning with Tabular Methods}{}% 59
 \BOOKMARK [2][-]{subsection.8.1}{Models and Planning}{section.8}% 60
 \BOOKMARK [2][-]{subsection.8.2}{Dyna: Integrated Planning, Acting, and Learning}{section.8}% 61
+\BOOKMARK [2][-]{subsection.8.3}{When the Model is Wrong}{section.8}% 62
+\BOOKMARK [2][-]{subsection.8.4}{Prioritized Sweeping}{section.8}% 63
+\BOOKMARK [2][-]{subsection.8.5}{Expected vs. Sample Updates}{section.8}% 64
+\BOOKMARK [2][-]{subsection.8.6}{Trajectory Sampling}{section.8}% 65
+\BOOKMARK [2][-]{subsection.8.7}{Real-time Dynamic Programming}{section.8}% 66
+\BOOKMARK [2][-]{subsection.8.8}{Planning at Decision Time}{section.8}% 67
+\BOOKMARK [2][-]{subsection.8.9}{Heuristic Search}{section.8}% 68
+\BOOKMARK [2][-]{subsection.8.10}{Rollout Algorithms}{section.8}% 69
+\BOOKMARK [2][-]{subsection.8.11}{Monte Carlo Tree Search}{section.8}% 70
+\BOOKMARK [2][-]{subsection.8.12}{Key Takeaways}{section.8}% 71
+\BOOKMARK [2][-]{subsection.8.13}{Summary of Part 1}{section.8}% 72
+\BOOKMARK [1][-]{section.9}{On-policy Prediction with Approximation}{}% 73
+\BOOKMARK [2][-]{subsection.9.1}{Value-function Approximation}{section.9}% 74
+\BOOKMARK [2][-]{subsection.9.2}{The Prediction Objective \(\)}{section.9}% 75
+\BOOKMARK [2][-]{subsection.9.3}{Stochastic-gradient and Semi-gradient Methods}{section.9}% 76
+\BOOKMARK [2][-]{subsection.9.4}{Linear Methods}{section.9}% 77
+\BOOKMARK [2][-]{subsection.9.5}{Feature Construction for Linear Models}{section.9}% 78
+\BOOKMARK [3][-]{subsubsection.9.5.1}{Polynomials}{subsection.9.5}% 79
+\BOOKMARK [3][-]{subsubsection.9.5.2}{Fourier Basis}{subsection.9.5}% 80
+\BOOKMARK [3][-]{subsubsection.9.5.3}{Coarse Coding}{subsection.9.5}% 81
+\BOOKMARK [3][-]{subsubsection.9.5.4}{Tile Coding}{subsection.9.5}% 82
+\BOOKMARK [3][-]{subsubsection.9.5.5}{Radial Basis Functions}{subsection.9.5}% 83
+\BOOKMARK [2][-]{subsection.9.6}{Selecting Step-Size Parameters Manually}{section.9}% 84
+\BOOKMARK [2][-]{subsection.9.7}{Nonlinear Function Approximation: Artificial Neural Networks}{section.9}% 85
+\BOOKMARK [2][-]{subsection.9.8}{Least-Squares TD}{section.9}% 86
+\BOOKMARK [2][-]{subsection.9.9}{Memory-based Function Approximation}{section.9}% 87
+\BOOKMARK [2][-]{subsection.9.10}{Kernel-based Function Approximation}{section.9}% 88
+\BOOKMARK [2][-]{subsection.9.11}{Looking Deeper at On-policy Learning: Interest and Emphasis}{section.9}% 89
+\BOOKMARK [2][-]{subsection.9.12}{Key Takeaways}{section.9}% 90

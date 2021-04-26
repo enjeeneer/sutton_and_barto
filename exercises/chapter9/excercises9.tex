@@ -1,0 +1,68 @@
+\section{On-policy Prediction with Approximation}
+\subsection{Exercise 9.1}
+\subsubsection{Q}
+Show that tabular methods such as presented in Part I of this book are a special case of linear function approximation. What would the feature vectors be?
+\subsubsection{A}
+To update equation for $n$-step semi-gradient TD learning is:
+\begin{equation}
+	\textbf{w} \leftarrow \textbf{w} + \alpha\left[G - \hat{v}(S_\tau, \textbf{w})\right] \nabla \hat{v}(S_\tau, \textbf{w})
+\end{equation}
+
+To return to tabular TD, $\nabla \hat{v}(S_\tau, \textbf{w})$ must equal 1. And we know $\nabla \hat{v}(S_\tau, \textbf{w}) = \textbf{x}(s)$, therefore:
+\begin{equation}
+\textbf{x}(s) = 1 \forall s \in \mathcal{S}
+\end{equation}
+
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 9.2}
+\subsubsection{Q}
+Why does (9.17) define $(n + 1)^k$ distinct features for dimension $k$?
+\subsubsection{A}
+From Bryn Hader's answers: \\
+"Each of the $k$ terms can independently have one of $n+1$ exponents, hence the total number of fratures is $(n+1)^k$."
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 9.3}
+\subsubsection{Q}
+What $n$ and $c_{i,j}$ produce the feature vectors $\textbf{x}(s) = (1, s_1, s_2, s_1s_2, s_1^2, s_2^2, s_1s_2^2, s_1^2s_2, s_1^2s_2^2)^T$?
+\subsubsection{A}
+$n = 2$ and $c_{i,j}$:
+\begin{bmatrix}
+0 & 0 \\
+1 & 0 \\
+0 & 1 \\
+1 & 1 \\
+2 & 0 \\
+0 & 2 \\
+1 & 2 \\
+2 & 1 \\
+2 & 2 \\
+\end{bmatrix}
+$
+\hfill \blacksquare
+$
+
+\subsection{Exercise 9.4}
+\subsubsection{Q}
+Suppose we believe that one of two state dimensions is more likely to have an effect on the value function than is the other, that generalization should be primarily across this dimension rather than along it. What kind of tilings could be used to take advantage of this prior knowledge?
+\subsubsection{A}
+If we imagine the state-space as a two-dimensional plane with our key dimension plotting on the x-axis and our dependent state plotted on the y-axis, we would want our tiles to vertically, cutting the x axis at regular intervals of x.
+
+\subsection{Exercise 9.5}
+\subsubsection{Q}
+Suppose you are using tile coding to transform a seven-dimensional continuous state space into binary feature vectors to estimate a state value function $\hat{v}(s,\textbf{w}) \approx v_\pi(s)$. You believe that the dimensions do not interact strongly, so you decide to use eight tilings of each dimension separately (stripe tilings), for 7 $\times$ 8 = 56 tilings. In addition, in case there are some pairwise interactions between the dimensions, you also take all $(7 \choose 2) = 21$ pairs of dimensions and tile each pair conjunctively with rectangular tiles. You make two tilings for each pair of dimensions, making a grand total of 21 $\times$ 2 + 56 = 98 tilings. Given these feature vectors, you suspect that you still have to average out some noise, so you decide that you want learning to be gradual, taking about 10 presentations with the same feature vector before learning nears its asymptote. What step-size parameter should you use? Why?
+\subsubsection{A}
+We have 98 distinct features, and no knowledge of which are likely to occur, therefore we expect them to appear uniformly at random. Therefore to sample each tile 10 times before making full updates, we set the learning rate as follows:
+\begin{align}
+\alpha &= (\tau \mathbb{E}[\textbf{x}^T\textbf{x}])^{-1} \\
+&= \frac{1}{10 \times 98} \\
+&= \frac{1}{980}
+\end{align}
+$
+\hfill \blacksquare
+$

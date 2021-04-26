@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  16 APR 2021 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.1)  26 APR 2021 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,9 +313,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count275
 \l__pdf_internal_box=\box47
 )
-(./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux)
-(./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux)
-(./chapter6/chapter6.aux) (./chapter7/chapter7.aux) (./chapter8/chapter8.aux))
+(./notes.aux)
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -426,23 +424,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./notes.toc
-[1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.35794pt too wide) in paragraph at lines 56--56
- [][] [][]\OT1/cmr/m/n/10 Off-policy Learn-ing With-out Im-por-tance Sam-pling:
- The $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 -step Tree Backup 
- []
-
 )
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `notes.toc'.
 
- [2]
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `chapter1/chapter1.aux'.
 
- (./chapter1/chapter1.tex) [3
+
+(./chapter1/chapter1.tex) [2
 
 ]
 \openout2 = `chapter2/chapter2.aux'.
@@ -453,11 +448,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 
+LaTeX Warning: Reference `eq: estimated value' on page 3 undefined on input lin
+e 22.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<../images//chapter2_1.png, id=334, 1198.4775pt x 1110.1475pt>
+<../images//chapter2_1.png, id=382, 1198.4775pt x 1110.1475pt>
 File: ../images//chapter2_1.png Graphic file (type png)
 <use ../images//chapter2_1.png>
 Package pdftex.def Info: ../images//chapter2_1.png  used on input line 38.
@@ -465,57 +464,62 @@ Package pdftex.def Info: ../images//chapter2_1.png  used on input line 38.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4
+[3
 
 
-] [5 <../images//chapter2_1.png>] [6]
-<../images//chapter2_2.png, id=367, 1172.38pt x 548.0475pt>
+] [4 <../images//chapter2_1.png>] [5]
+<../images//chapter2_2.png, id=416, 1172.38pt x 548.0475pt>
 File: ../images//chapter2_2.png Graphic file (type png)
 <use ../images//chapter2_2.png>
 Package pdftex.def Info: ../images//chapter2_2.png  used on input line 118.
 (pdftex.def)             Requested size: 386.67296pt x 180.75587pt.
- [7 <../images//chapter2_2.png>]
-<../images//chapter2_4.png, id=378, 806.01125pt x 400.49625pt>
+ [6 <../images//chapter2_2.png>]
+
+LaTeX Warning: Reference `fig:chapter2_4' on page 7 undefined on input line 136
+.
+
+<../images//chapter2_4.png, id=425, 806.01125pt x 400.49625pt>
 File: ../images//chapter2_4.png Graphic file (type png)
 <use ../images//chapter2_4.png>
 Package pdftex.def Info: ../images//chapter2_4.png  used on input line 141.
 (pdftex.def)             Requested size: 386.67296pt x 192.13213pt.
-)
-[8 <../images//chapter2_4.png>]
+) [7 <../images//chapter2_4.png>]
 \openout2 = `chapter3/chapter3.aux'.
 
  (./chapter3/chapter3.tex
-<../images//chapter3_1.png, id=385, 1110.1475pt x 318.18875pt>
+<../images//chapter3_1.png, id=433, 1110.1475pt x 318.18875pt>
 File: ../images//chapter3_1.png Graphic file (type png)
 <use ../images//chapter3_1.png>
 Package pdftex.def Info: ../images//chapter3_1.png  used on input line 6.
 (pdftex.def)             Requested size: 386.67296pt x 110.8288pt.
- [9
+ [8
 
 
- <../images//chapter3_1.png>] [10]
-<../images//chapter3_2.png, id=403, 1140.26pt x 393.47pt>
+ <../images//chapter3_1.png>] [9]
+
+LaTeX Warning: Reference `fig:backup' on page 10 undefined on input line 123.
+
+<../images//chapter3_2.png, id=450, 1140.26pt x 393.47pt>
 File: ../images//chapter3_2.png Graphic file (type png)
 <use ../images//chapter3_2.png>
 Package pdftex.def Info: ../images//chapter3_2.png  used on input line 126.
 (pdftex.def)             Requested size: 386.67296pt x 133.4298pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12 <../images//chapter3_2.png>]) [13]
+[10] [11 <../images//chapter3_2.png>]) [12]
 \openout2 = `chapter4/chapter4.aux'.
 
- (./chapter4/chapter4.tex [14
+ (./chapter4/chapter4.tex [13
 
 
 ]
-<../images//chapter4_1.png, id=437, 415.5525pt x 40.15pt>
+<../images//chapter4_1.png, id=484, 415.5525pt x 40.15pt>
 File: ../images//chapter4_1.png Graphic file (type png)
 <use ../images//chapter4_1.png>
 Package pdftex.def Info: ../images//chapter4_1.png  used on input line 43.
 (pdftex.def)             Requested size: 386.67296pt x 37.36115pt.
-<../images//chapter4_2.png, id=438, 516.93124pt x 324.21124pt>
+<../images//chapter4_2.png, id=485, 516.93124pt x 324.21124pt>
 File: ../images//chapter4_2.png Graphic file (type png)
 <use ../images//chapter4_2.png>
 Package pdftex.def Info: ../images//chapter4_2.png  used on input line 63.
@@ -524,52 +528,74 @@ Package pdftex.def Info: ../images//chapter4_2.png  used on input line 63.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <../images//chapter4_1.png>]) [16 <../images//chapter4_2.png>]
+
+LaTeX Warning: Reference `fig:gpi' on page 14 undefined on input line 68.
+
+[14 <../images//chapter4_1.png>]) [15 <../images//chapter4_2.png>]
 \openout2 = `chapter5/chapter5.aux'.
 
 
 (./chapter5/chapter5.tex
-<../images//chapter5_1.png, id=458, 104.39pt x 412.54124pt>
+<../images//chapter5_1.png, id=503, 104.39pt x 412.54124pt>
 File: ../images//chapter5_1.png Graphic file (type png)
 <use ../images//chapter5_1.png>
 Package pdftex.def Info: ../images//chapter5_1.png  used on input line 11.
 (pdftex.def)             Requested size: 38.66965pt x 152.82042pt.
- [17
+ [16
 
 
- <../images//chapter5_1.png>] [18] [19]
-<../images//chapter5_3.png, id=477, 797.98125pt x 486.81876pt>
+ <../images//chapter5_1.png>] [17] [18]
+
+LaTeX Warning: Reference `incremental V' on page 19 undefined on input line 95.
+
+
+
+LaTeX Warning: Reference `fig:Off-policy monte carlo control' on page 19 undefi
+ned on input line 95.
+
+<../images//chapter5_3.png, id=522, 797.98125pt x 486.81876pt>
 File: ../images//chapter5_3.png Graphic file (type png)
 <use ../images//chapter5_3.png>
 Package pdftex.def Info: ../images//chapter5_3.png  used on input line 99.
 (pdftex.def)             Requested size: 193.33647pt x 117.9457pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20] [21 <../images//chapter5_3.png>]) [22]
+[19] [20 <../images//chapter5_3.png>]) [21]
 \openout2 = `chapter6/chapter6.aux'.
 
  (./chapter6/chapter6.tex
-<../images//chapter6_1.png, id=497, 95.35625pt x 169.63374pt>
+
+LaTeX Warning: Reference `fig:td(0)' on page 22 undefined on input line 11.
+
+<../images//chapter6_1.png, id=542, 95.35625pt x 169.63374pt>
 File: ../images//chapter6_1.png Graphic file (type png)
 <use ../images//chapter6_1.png>
 Package pdftex.def Info: ../images//chapter6_1.png  used on input line 15.
 (pdftex.def)             Requested size: 77.3334pt x 137.57599pt.
-<../images//chapter6_2.png, id=499, 854.19125pt x 340.27126pt>
+
+LaTeX Warning: Reference `eq: td' on page 22 undefined on input line 20.
+
+<../images//chapter6_2.png, id=543, 854.19125pt x 340.27126pt>
 File: ../images//chapter6_2.png Graphic file (type png)
 <use ../images//chapter6_2.png>
 Package pdftex.def Info: ../images//chapter6_2.png  used on input line 27.
 (pdftex.def)             Requested size: 386.67296pt x 154.02927pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23
+
+LaTeX Warning: Reference `fig:td vs. mc' on page 22 undefined on input line 32.
 
 
- <../images//chapter6_1.png>] [24 <../images//chapter6_2.png>] [25])
-[26]
+[22
+
+
+ <../images//chapter6_1.png>]
+
+LaTeX Warning: Reference `eq: td' on page 23 undefined on input line 50.
+
+[23 <../images//chapter6_2.png>] [24]) [25]
 \openout2 = `chapter7/chapter7.aux'.
 
  (./chapter7/chapter7.tex
@@ -589,7 +615,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
-<../images//chapter7_1.png, id=531, 567.11874pt x 506.89375pt>
+
+LaTeX Warning: Reference `fig: n-step methods' on page 26 undefined on input li
+ne 5.
+
+<../images//chapter7_1.png, id=572, 567.11874pt x 506.89375pt>
 File: ../images//chapter7_1.png Graphic file (type png)
 <use ../images//chapter7_1.png>
 Package pdftex.def Info: ../images//chapter7_1.png  used on input line 17.
@@ -602,21 +632,33 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 29.
 
-[27
+
+LaTeX Warning: Reference `fig: n-step sarsa methods' on page 26 undefined on in
+put line 30.
+
+[26
 
 
  <../images//chapter7_1.png>]
-<../images//chapter7_2.png, id=543, 864.22874pt x 529.98pt>
+<../images//chapter7_2.png, id=583, 864.22874pt x 529.98pt>
 File: ../images//chapter7_2.png Graphic file (type png)
 <use ../images//chapter7_2.png>
 Package pdftex.def Info: ../images//chapter7_2.png  used on input line 37.
 (pdftex.def)             Requested size: 270.66988pt x 165.98224pt.
-<../images//chapter7_3.png, id=545, 927.465pt x 271.0125pt>
+
+
+LaTeX Warning: Reference `fig: n-step sarsa speed up' on page 27 undefined on i
+nput line 42.
+
+<../images//chapter7_3.png, id=584, 927.465pt x 271.0125pt>
 File: ../images//chapter7_3.png Graphic file (type png)
 <use ../images//chapter7_3.png>
 Package pdftex.def Info: ../images//chapter7_3.png  used on input line 45.
 (pdftex.def)             Requested size: 309.33954pt x 90.39378pt.
 
+LaTeX Warning: Reference `eq: n-step sarsa' on page 27 undefined on input line 
+50.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
@@ -625,7 +667,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
 
-[28 <../images//chapter7_2.png>]
+
+LaTeX Warning: Reference `eq: importance sampling ratio' on page 27 undefined o
+n input line 62.
+
+[27 <../images//chapter7_2.png>]
+
+LaTeX Warning: Reference `eq: off policy n step' on page 28 undefined on input 
+line 73.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 75.
@@ -634,13 +684,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 75.
 
-[29 <../images//chapter7_3.png>]
-<../images//chapter7_4.png, id=573, 252.945pt x 800.9925pt>
+
+LaTeX Warning: Reference `fig: tree-backup update' on page 28 undefined on inpu
+t line 76.
+
+[28 <../images//chapter7_3.png>]
+
+LaTeX Warning: Reference `eq: n-step sarsa' on page 29 undefined on input line 
+91.
+
+<../images//chapter7_4.png, id=605, 252.945pt x 800.9925pt>
 File: ../images//chapter7_4.png Graphic file (type png)
 <use ../images//chapter7_4.png>
 Package pdftex.def Info: ../images//chapter7_4.png  used on input line 95.
 (pdftex.def)             Requested size: 96.66823pt x 306.11586pt.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 100.
@@ -661,56 +718,188 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 100.
 
-<../images//chapter7_5.png, id=575, 832.10875pt x 576.1525pt>
+
+LaTeX Warning: Reference `fig: all chap 7 backup diagrams' on page 29 undefined
+ on input line 101.
+
+<../images//chapter7_5.png, id=606, 832.10875pt x 576.1525pt>
 File: ../images//chapter7_5.png Graphic file (type png)
 <use ../images//chapter7_5.png>
 Package pdftex.def Info: ../images//chapter7_5.png  used on input line 105.
 (pdftex.def)             Requested size: 290.00471pt x 200.79483pt.
-[30 <../images//chapter7_4.png>]) [31 <../images//chapter7_5.png>]
+[29 <../images//chapter7_4.png>]) [30 <../images//chapter7_5.png>]
 \openout2 = `chapter8/chapter8.aux'.
 
 
 (./chapter8/chapter8.tex
-<../images//chapter8_1.png, id=590, 894.34125pt x 90.3375pt>
+
+LaTeX Warning: Reference `fig: updating policy using model' on page 31 undefine
+d on input line 11.
+
+<../images//chapter8_1.png, id=621, 894.34125pt x 90.3375pt>
 File: ../images//chapter8_1.png Graphic file (type png)
 <use ../images//chapter8_1.png>
 Package pdftex.def Info: ../images//chapter8_1.png  used on input line 17.
 (pdftex.def)             Requested size: 386.67296pt x 39.05801pt.
-<../images//chapter8_2.png, id=593, 562.1pt x 438.63875pt>
+
+LaTeX Warning: Reference `fig: direct rl and model-learning' on page 31 undefin
+ed on input line 25.
+
+
+LaTeX Warning: Reference `fig: dyna' on page 31 undefined on input line 26.
+
+[31
+
+
+ <../images//chapter8_1.png>]
+<../images//chapter8_2.png, id=629, 562.1pt x 438.63875pt>
 File: ../images//chapter8_2.png Graphic file (type png)
 <use ../images//chapter8_2.png>
-Package pdftex.def Info: ../images//chapter8_2.png  used on input line 31.
+Package pdftex.def Info: ../images//chapter8_2.png  used on input line 32.
 (pdftex.def)             Requested size: 193.33647pt x 150.8687pt.
-<../images//chapter8_3.png, id=594, 464.73625pt x 338.26375pt>
+<../images//chapter8_3.png, id=630, 464.73625pt x 338.26375pt>
 File: ../images//chapter8_3.png Graphic file (type png)
 <use ../images//chapter8_3.png>
-Package pdftex.def Info: ../images//chapter8_3.png  used on input line 38.
-(pdftex.def)             Requested size: 193.33647pt x 140.71748pt.
-) [32
+Package pdftex.def Info: ../images//chapter8_3.png  used on input line 39.
+(pdftex.def)             Requested size: 290.00471pt x 211.08914pt.
+ [32 <../images//chapter8_2.png> <../images//chapter8_3.png>]
+
+LaTeX Warning: Reference `fig: samples vs expectations' on page 33 undefined on
+ input line 55.
+
+<../images//chapter8_4.png, id=639, 771.88374pt x 401.5pt>
+File: ../images//chapter8_4.png Graphic file (type png)
+<use ../images//chapter8_4.png>
+Package pdftex.def Info: ../images//chapter8_4.png  used on input line 59.
+(pdftex.def)             Requested size: 386.67296pt x 201.12933pt.
+[33] [34 <../images//chapter8_4.png>]
+
+LaTeX Warning: Reference `fig: heuristic search' on page 35 undefined on input 
+line 94.
+
+<../images//chapter8_5.png, id=650, 882.29625pt x 445.665pt>
+File: ../images//chapter8_5.png Graphic file (type png)
+<use ../images//chapter8_5.png>
+Package pdftex.def Info: ../images//chapter8_5.png  used on input line 98.
+(pdftex.def)             Requested size: 386.67296pt x 195.31796pt.
+
+LaTeX Warning: Reference `fig: MCTS' on page 35 undefined on input line 109.
+
+[35]
+<../images//chapter8_6.png, id=657, 740.7675pt x 483.8075pt>
+File: ../images//chapter8_6.png Graphic file (type png)
+<use ../images//chapter8_6.png>
+Package pdftex.def Info: ../images//chapter8_6.png  used on input line 113.
+(pdftex.def)             Requested size: 386.67296pt x 252.54105pt.
+ [36 <../images//chapter8_5.png>] [37 <../images//chapter8_6.png>]
+<../images//chapter8_7.png, id=671, 778.91pt x 685.56125pt>
+File: ../images//chapter8_7.png Graphic file (type png)
+<use ../images//chapter8_7.png>
+Package pdftex.def Info: ../images//chapter8_7.png  used on input line 133.
+(pdftex.def)             Requested size: 386.67296pt x 340.33195pt.
+)
+[38] [39 <../images//chapter8_7.png>]
+\openout2 = `chapter9/chapter9.aux'.
+
+ (./chapter9/chapter9.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 5.
 
 
- <../images//chapter8_1.png>] [33 <../images//chapter8_2.png> <../images//chapt
-er8_3.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
- (./notes.aux (./chapter1/chapter1.aux) (./chapter2/chapter2.aux) (./chapter3/c
-hapter3.aux) (./chapter4/chapter4.aux)
-(./chapter5/chapter5.aux) (./chapter6/chapter6.aux) (./chapter7/chapter7.aux)
-(./chapter8/chapter8.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 5.
+
+
+Overfull \hbox (9.0814pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 Corresponding to ev-ery state $\OML/cmm/m/it/10 s$\OT1/cmr/m/n/
+10 , there is a real-valued vec-tor $[](\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) [] 
+(\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 ; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/
+it/10 ; [] ; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ))[]$
+ []
+
+[40
+
+
+]
+
+LaTeX Warning: Reference `fig: n-step algo' on page 41 undefined on input line 
+69.
+
+<../images//chapter9_1.png, id=692, 818.05624pt x 570.13pt>
+File: ../images//chapter9_1.png Graphic file (type png)
+<use ../images//chapter9_1.png>
+Package pdftex.def Info: ../images//chapter9_1.png  used on input line 73.
+(pdftex.def)             Requested size: 386.67296pt x 269.49225pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig: poly' on page 41 undefined on input line 82.
+
+<../images//chapter9_2.png, id=693, 720.6925pt x 235.88126pt>
+File: ../images//chapter9_2.png Graphic file (type png)
+<use ../images//chapter9_2.png>
+Package pdftex.def Info: ../images//chapter9_2.png  used on input line 86.
+(pdftex.def)             Requested size: 386.67296pt x 126.55695pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41] [42 <../images//chapter9_1.png> <../images//chapter9_2.png>]
+
+LaTeX Warning: Reference `fig: coarse coding' on page 43 undefined on input lin
+e 101.
+
+<../images//chapter9_3.png, id=719, 745.78625pt x 656.4525pt>
+File: ../images//chapter9_3.png Graphic file (type png)
+<use ../images//chapter9_3.png>
+Package pdftex.def Info: ../images//chapter9_3.png  used on input line 105.
+(pdftex.def)             Requested size: 290.00471pt x 255.26419pt.
+
+LaTeX Warning: Reference `fig: tile coding' on page 43 undefined on input line 
+111.
+
+<../images//chapter9_4.png, id=720, 983.675pt x 362.35374pt>
+File: ../images//chapter9_4.png Graphic file (type png)
+<use ../images//chapter9_4.png>
+Package pdftex.def Info: ../images//chapter9_4.png  used on input line 115.
+(pdftex.def)             Requested size: 386.67296pt x 142.43979pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43 <../images//chapter9_3.png>]
+
+LaTeX Warning: Reference `fig: rbf' on page 44 undefined on input line 126.
+
+<../images//chapter9_5.png, id=730, 643.40375pt x 196.735pt>
+File: ../images//chapter9_5.png Graphic file (type png)
+<use ../images//chapter9_5.png>
+Package pdftex.def Info: ../images//chapter9_5.png  used on input line 130.
+(pdftex.def)             Requested size: 386.67296pt x 118.23701pt.
+[44 <../images//chapter9_4.png> <../images//chapter9_5.png>] [45] [46])
+[47]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+ (./notes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 20A18E7E9D1DF619B0935F2AB8240BE1;4585.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+(rerunfilecheck)             Checksum: 877F2CE2D1B4E0CB76D0A8D1C33B209A;6828.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 9252 strings out of 480608
- 141660 string characters out of 5903630
- 421762 words of memory out of 5000000
- 24744 multiletter control sequences out of 15000+600000
- 544378 words of font info for 70 fonts, out of 8000000 for 9000
+ 9393 strings out of 480608
+ 143846 string characters out of 5903630
+ 416769 words of memory out of 5000000
+ 24825 multiletter control sequences out of 15000+600000
+ 544997 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,43p,1025b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,43p,1343b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -726,18 +915,22 @@ al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (33 pages, 964987 bytes).
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on notes.pdf (47 pages, 1706507 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 616 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 584 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 761 compressed objects within 8 object streams
+ 250 named destinations out of 1000 (max. 500000)
+ 861 words of extra memory for PDF output out of 10000 (max. 10000000)
 

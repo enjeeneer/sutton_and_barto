@@ -17,14 +17,15 @@ if __name__ == '__main__':
     dyna_new_reward = []
 
     # run dyna_q
-    for _ in tqdm(range(1000)):
+    for i in tqdm(range(1000)):
         done = False
         state = env_dyna_q.reset()
         while not done:
             a_idx = dyna_q.choose_action(state)
             state_, reward, done = env_dyna_q.step(state, a_idx)
             dyna_q.learn(state_, state, a_idx, reward)
-            dyna_q.plan()
+            if i > 0:
+                dyna_q.plan()
             state = state_
 
             dyna_q_reward.append(reward)
@@ -33,15 +34,16 @@ if __name__ == '__main__':
     with open('data/dyna_q_rewards.pickle', 'wb') as f:
         pickle.dump(dyna_q_reward, f)
 
-    run dyna_q_plus
-    for _ in tqdm(range(1000)):
+    #run dyna_q_plus
+    for i in tqdm(range(1000)):
         done = False
         state = env_dyna_q_plus.reset()
         while not done:
             a_idx = dyna_q_plus.choose_action(state)
             state_, reward, done = env_dyna_q_plus.step(state, a_idx)
             dyna_q_plus.learn(state_, state, a_idx, reward)
-            dyna_q_plus.plan()
+            if i > 0:
+                dyna_q_plus.plan()
             state = state_
 
             dyna_q_plus_reward.append(reward)
@@ -51,14 +53,15 @@ if __name__ == '__main__':
         pickle.dump(dyna_q_plus_reward, f)
 
     # run dyna_new
-    for _ in tqdm(range(1000)):
+    for i in tqdm(range(1000)):
         done = False
         state = env_dyna_new.reset()
         while not done:
             a_idx = dyna_new.choose_action(state)
             state_, reward, done = env_dyna_new.step(state, a_idx)
             dyna_new.learn(state_, state, a_idx, reward)
-            dyna_new.plan()
+            if i > 0:
+                dyna_new.plan()
             state = state_
 
             dyna_new_reward.append(reward)
