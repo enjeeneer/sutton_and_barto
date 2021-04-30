@@ -3,49 +3,45 @@
 RL evaluates the actions taken rather than instructs correct actions like other forms of learning.
 
 \subsection{An n-Armed Bandit Problem}
-\textbf{The problem}:\\
+\textbf{The problem}
 \begin{itemize}
 \item You are faced repeatedly with a choice of \textit{n} actions.
 \item After each choice, you receive a reward from a stationary probability distribution.
 \item Objective is to maximise total reward over some time period, say 100 time steps.
 \item Named after of slot machine (one-armed bandit problem), but \textit{n} levers instead of 1.
-\item Each action has an expected or mean reward based on it's prob distribution. We shall call that the \textit{value} of the action. We do not know these values with certainty.
+\item Each action has an expected or mean reward based on its probability distribution. We shall call thjs the \textit{value} of the action. We do not know these values with certainty.
 \item Because of this uncertainty, there is always an exploration vs exploitation problem. We always have one action that we deem to be most valuable at any instant, but it is highly likely, at least initially, that there are actions we are yet to explore that are more valuable.
 \end{itemize}
 
 \subsection{Action-Value Methods}
-\textbf{The estimated action value}
+The estimated action value is
 \begin{equation} \label{eq: estimated value}
 	Q_t(a) = \frac{R_1+R_2+\cdots+R_{N_t(a)}}{N_t(a)}
 \end{equation}
 
 The true value (mean reward) of an action is \(q\), but the estimated value at the \textit{t}th time-step is Q(a), given by Equation \ref{eq: estimated value} (our estimate after \textit{N} selections of an action yielding \textit{N} rewards).\\
 
-\noindent \textbf{The greedy action selection method:}
+The greedy action selection method is
 \begin{equation} \label{eq: argmax}
 A_t =\argmax_a Q_t(a)
 \end{equation}
 
 \begin{itemize}
 	\item Simplest action selection rule is to select the action with the highest estimated value.
-	\item Argmax a means the value of \(a\) for which \(Q_t\) is maximised.
+	\item $\argmax_a$ means the value of \(a\) for which \(Q_t\) is maximised.
 	\item \(\epsilon\)-greedy methods are where the agent selects the greedy option most of the time, and selects a random action with probability \(\epsilon\).
 	\item Three algorithms are tried: one with \(e\)=0 (pure greedy), one with \(e\)=0.01 and another with \(e\)=0.1
-\end{itemize}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{/chapter2_1}
-	\caption{tbc}
-	\label{fig:chapter2_1}
-\end{figure}
-
-\begin{itemize}
 	\item Greedy method gets stuck performing sub-optimal actions.
 	\item \(e\)=0.1 explores more and usually finds the optimal action earlier, but never selects it more that 91\% of the time.
 	\item \(e\)=0.01 method improves more slowly, but eventually performs better than the e=0.1 method on both performance measures.
 	\item It is possible to reduce \(e\) over time to try to get the best of both high and low values.
 \end{itemize}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{/chapter2_1}
+	\caption{Average performance of $\epsilon$-greedy action-value methods on the 10-armed testbed. These data are averages over 2000 runs with different bandit problems. All methods used sample averages as their action-value estimates.}
+	\label{fig:chapter2_1}
+\end{figure}
 
 \subsection{Incremental Implementation}
 The sample-average technique used to estimate action-values above has a problem: memory and computation requirements grow over time. This isn't necessary, we can devise an incremental solution instead:
@@ -113,18 +109,15 @@ where c \(>\) 0 controls the degree of exploration.
 	\item UCB will often perform better than e-greedy methods
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{/chapter2_2}
+	\includegraphics[width=0.8\textwidth]{/chapter2_2}
 	\caption{UCB performs better than \(e\)-greedy in the n-armed bandit problem}
 	\label{fig:chapter2_2}
 \end{figure}
 
 \subsection{Associative Search (Contextual Bandits)}
-\begin{itemize}
-\item Thus far we have been discussing the stationary k-armed bandit problem, where the value of each arm is unknown but nonetheless remains stationary. Now, we consider a problem where the task could change from step to step, but the value distributions of the arms in each task remain the same. This is called contextual bandits, and in the toy example we are usually given a hint that the task has changed e.g. the slot machine changes colour for each task.
-\item Now we want to learn the correct action to take in a particular setting, given the task colour observed. This is an intermediary between the stationary problem and the full reinforcement learning problem. See exercise 2.10 below.
-\end{itemize}
+Thus far we have been discussing the stationary $k$-armed bandit problem, where the value of each arm is unknown but nonetheless remains stationary. Now, we consider a problem where the task could change from step to step, but the value distributions of the arms in each task remain the same. This is called contextual bandits, and in the toy example we are usually given a hint that the task has changed e.g. the slot machine changes colour for each task. Now we want to learn the correct action to take in a particular setting, given the task colour observed. This is an intermediary between the stationary problem and the full reinforcement learning problem. See exercise 2.10 below.
 
 \subsection{Key Takeaways}
 \begin{itemize}
@@ -136,9 +129,9 @@ where c \(>\) 0 controls the degree of exploration.
 \item Lastly, each of these techniques have varied performance on the n-armed bandit test dependent on their parametrisation. Their performance is plotted in Figure \ref{fig:chapter2_4}.
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{/chapter2_4}
+	\includegraphics[width=0.8\textwidth]{/chapter2_4}
 	\caption{Performance of each of the bandit algorithms explored in this chapter}
 	\label{fig:chapter2_4}
 \end{figure}

@@ -1,5 +1,5 @@
 \section{Monte Carlo Methods}
-If we do not have knowledge of the transition probabilities (model of the environment) then we must learn directly from experience. To do so, we use Monte Carlo methods. Monte carlo methods are most effective in episodic tasks where there is a terminal state and the value of the states visited en route to the terminal state can be updated based on the reward received at the terminal state. We use general policy iteration as outlined in chapter 4, but this time instead of \textit{computing} the value function we learn it from samples. We first consider the prediction problem to obtain $v_\pi$ and/or \textbf{$q_\pi$} for a fixed policy, then we look to improve using policy improvement, then we use it for control.  
+If we do not have knowledge of the transition probabilities (model of the environment) then we must learn directly from experience. To do so, we use Monte Carlo methods. Monte carlo methods are most effective in episodic tasks where there is a terminal state and the value of the states visited en route to the terminal state can be updated based on the reward received at the terminal state. We use general policy iteration as outlined in chapter 4, but this time instead of \textit{computing} the value function we \textit{learn} it from samples. We first consider the prediction problem to obtain $v_\pi$ and/or \textbf{$q_\pi$} for a fixed policy, then we look to improve using policy improvement, then we use it for control.  
 
 \subsection{Monte Carlo Policy Prediction}
 \begin{itemize}
@@ -21,7 +21,7 @@ If we do not have knowledge of the transition probabilities (model of the enviro
 \begin{itemize}
 \item With a model we only need to estimate the state value function \(v\) as, paired with our model, we can evaluate the rewards and next states for each of our actions and pick the best one.
 \item With model free methods we need to estimate the state-action value function \(q\) as we must explicitly estimate the value of each action in order for the values to be useful in suggesting a policy. (If we only have the values of states, and don't know how states are linked through a model, then selecting the optimal action is impossible)
-\item One serious complication arises when we do not visit every state, as can be the case if our policy is deterministic. If we do not visit states then we do not observe returns from these states and cannot estimate their value. We therefore need to \textit{maintain exploration} of the state space. One way of doing so is stochastically selected a state-action pair to start an episode, giving every state-action pair a non-zero probability of being selected. In this case, we are said to be utilising \textit{\textbf{exploring starts}}.
+\item One serious complication arises when we do not visit every state, as can be the case if our policy is deterministic. If we do not visit states then we do not observe returns from these states and cannot estimate their value. We therefore need to \textit{maintain exploration} of the state space. One way of doing so is stochastically selected a state-action pair to start an episode, giving every state-action pair a non-zero probability of being selected. In this case, we are said to be utilising \textit{exploring starts}.
 \item Exploring starts falls down when learning from real experience because we cannot guarantee that we start in a new state-action pair in the real world. 
 \item An alternative approach is to use stochastic policies that have non-zero probability of selecting each state-action pair.
 \end{itemize}
@@ -96,7 +96,7 @@ Using incremental implementation (updates to the value function) and importance 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\textwidth]{/chapter5_3}
+	\includegraphics[width=0.8\textwidth]{/chapter5_3}
 	\caption{Off-policy monte carlo control}
 	\label{fig:Off-policy monte carlo control}
 \end{figure}
@@ -111,8 +111,8 @@ Using incremental implementation (updates to the value function) and importance 
 \item Monte carlo methods can either be \textit{on-policy} or \textit{off-policy}.
 \item On-policy methods use the same policy to collect data as is evaluated and improved. This suffers the downsides outlined above.
 \item Off-policy methods have two policies, one that collects the data called the \textit{behaviour policy} $b$ and the other which we look to improve called the target policy $\pi$. We find trajectories from the behaviour policy that line up with our target policy, that is to say, that could have been produced by our target policy. This process only works if the behaviour policy has non-zero probability of selecting each of the actions in the target policy, aka \textit{coverage} of the target policy. The agent explores, but learns a deterministic optimal policy offline that may be unrelated to the behaviour policy used to collect the experience.
-\item Based on rewards observed by running the behaviour policy, we update our value function using \textit{importance sampling}, which measures, if effect, how likely the observed behaviour would have been given our target policy. For example, the target policy may take 1 of 4 actions with equal probability in each state. If we observe two timesteps from our beaviour policy, then our probability of selecting the actions taken by the behaviour policy would be $0.25 x 0.25$. 
-\item We weight each return using the x\textit{importance sampling ratio}, a measure of how likely we were to produce the roll-out using the target policy compared to how likely we were to produce the roll-out using the behaviour policy. 
+\item Based on rewards observed by running the behaviour policy, we update our value function using \textit{importance sampling}, which measures, if effect, how likely the observed behaviour would have been given our target policy. For example, the target policy may take 1 of 4 actions with equal probability in each state. If we observe two timesteps from our beaviour policy, then our probability of selecting the actions taken by the behaviour policy would be $0.25 \times 0.25$. 
+\item We weight each return using the \textit{importance sampling ratio}, a measure of how likely we were to produce the roll-out using the target policy compared to how likely we were to produce the roll-out using the behaviour policy. 
 \item Importance sampling can be \textit{ordinary} i.e. an average of the returns observed from a state or \textit{weighted} where trajectories viewed more often, or with a higher importance sampling ratio give the value update more weight.
 
 \end{itemize}

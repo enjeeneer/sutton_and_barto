@@ -68,10 +68,10 @@ b &= \textbf{Aw}_{TD} \\
 
 This quantity is called the \textit{TD fixed point}. The $n$-step semi-gradient TD algorithm for estimating $\hat{v} \approx v_\pi$ is given in Figure \ref{fig: n-step algo}.
 
-\begin{figure}[h!]
+\begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{/chapter9_1}
-	\caption{Algorithm: $n$-step semi-gradient TD for estimating $\hat{v} \approx v_\pi$}
+	\includegraphics[width=0.8\textwidth]{/chapter9_1}
+	\caption{Pseudocode for $n$-step semi-gradient TD for estimating $\hat{v} \approx v_\pi$}
 	\label{fig: n-step algo}
 \end{figure}
 
@@ -81,9 +81,9 @@ Constructing features that are appropriate for the RL task is critical for provi
 \subsubsection{Polynomials}
 We may want to design features with higher complexity than can be captured with linear methods. If we think of the example of parametrising a state $s$ by two dimensions $s_1 \in \mathbb{R}$ and $s_2 \in \mathbb{R}$, we could represent this state as $\textbf{x}(s) = (s_1, s_2)^T$. This, however, does not allow us to represent interactions between the two dimensions if they do indeed interact, and it would also mean that the value of our state would have to be 0 if both dimensions were zero. We can instead use a four-dimensional feature vector like: $\textbf{x}(s) = (1, s_1, s_2, s_1s_2)^T$. This allows us to capture any combination of these dimensions in polynomial space. The generalised form of polynomials is shown in Figure \ref{fig: poly}.
 
-\begin{figure}[h!]
+\begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{/chapter9_2}
+	\includegraphics[width=0.8\textwidth]{/chapter9_2}
 	\caption{Generalised form of polynomial basis}
 	\label{fig: poly}
 \end{figure}
@@ -127,7 +127,7 @@ Figure \ref{fig: rbf} shows the overlapping distribution of RBF features.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{/chapter9_5}
+	\includegraphics[width=0.75\textwidth]{/chapter9_5}
 	\caption{One-dimensional radial basis functions.}
 	\label{fig: rbf}
 \end{figure}
@@ -150,7 +150,7 @@ Artificial Neural Networks (ANNs) have proven to be some of the best non-linear 
 \subsection{Least-Squares TD}
 Earlier, we established the TD fixed point as
 \begin{align}
-\textbf{w}_{TD} &\doteq \textbf{A}^-1\textbf{b}
+\textbf{w}_{TD} &\doteq \textbf{A}^{-1}\textbf{b}
 \end{align}
 where
 \begin{equation}
@@ -163,7 +163,7 @@ Instead of computing this solution iteratively, we could compute estimates of $A
 
 where $\textbf{I}$ is the identity matrix, and $\epsilon \textbf{I}$, for some small $\epsilon > 0$ ensures that $\hat{\textbf{A}_t}$ is always invertible. It looks like both $\hat{\textbf{A}_t}$ and $\hat{\textbf{b}_t}$ should be divided by $t$ to achieve the expectation, but the $t$s cancel when used to calculate the the TD fixed point as 
 \begin{equation}
-\textbf{w}_{TD} \doteq \hat{\textbf{A}^-1}\hat{\textbf{b}}
+\textbf{w}_{TD} \doteq \hat{\textbf{A}^{-1}}\hat{\textbf{b}}
 \end{equation}
 
 The inversion of the matrix usually requires $O(d^3)$ computation, but can be done with $O(d^2)$ using the \textit{Sherman-Morrison formula}. LSTD's lack of step size parameter means it never forgets, which is sometimes desirable, but often not in RL problems where both the environment and policy change with time.
@@ -197,7 +197,7 @@ M_t = I_t + \gamma^n M_{t-n}
 \item Linear methods can be proven to converge to the globally optimum weight vector under certain conditions. 
 \item Features, used to build linear methods, can take many forms, including: polynomials, fouriers, coarse codings, tile codings, and RBFs.
 \item Artificial NNs have been proven to be potentially the most effective nonlinear function approximator.
-\item Instead of using \textit{parametric} function approximators, \textit{nonparamteric} models can be used that predict values based on the distance of a current state to past observed next states for which we have some stored values, or state representations.
+\item Instead of using \textit{parametric} function approximators, \textit{non-parametric} models can be used that predict values based on the distance of a current state to past observed next states for which we have some stored values, or state representations.
 \item \textit{Interest}and \textit{Emphasis} allow us to focus the function approximation on parts of the state space where we would value more accurate estimates.
 \end{itemize}
 

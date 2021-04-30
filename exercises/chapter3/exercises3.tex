@@ -24,13 +24,18 @@ Devise three example tasks of your own that fit into the MDP framework, identify
 		\item Rewards: -1 for unit of shoe displacement from foot once tied.
 	\end{itemize}
 \end{enumerate}
-
+$
+\hfill \blacksquare
+$
 \subsection{Exercise 3.2}
 \subsubsection*{Q}
 Is the MDP framework adequate to usefully represent all goal-directed learning tasks? Can you think of any clear exceptions? 
 
 \subsubsection*{A}
 The MDP framework fails when the state cannot be fully observed. For example, one may try to control the temperature of a house using a state space represented by one thermometer in one room. Our agent would control the temperature observed by that thermometer well, but would be blind to temperatures that aren't measured by said thermometer elsewhere in the house.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.3}
 \subsubsection*{Q}
@@ -38,6 +43,9 @@ Consider the problem of driving. You could define the actions in terms of the ac
 
 \subsubsection*{A}
 There's a trade-off between state-action space complexity, computational expense and accuracy. If we draw the boundary at the brain we would create a state-action space contingent on the number of neurons in the brain and their interplay with physical actions like turning the steering wheel; too large to be stored or computed efficiently. Equally, if we draw the boundary at the \textit{journey} level, then we miss the detail required to act on second-by-second state changes on the road that could lead to a crash. The fundamental limiting factor in this selection is whether the goal can be achieved safely at your chosen layer of abstraction, indeed this feels like one of the tasks of engineering more widely.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.4}
 \subsubsection*{Q}
@@ -58,6 +66,9 @@ $\mathnormal{low}$		&  $\mathnormal{recharge}$   & $\mathnormal{high}$       &  
 \end{table}
 
 As there is no probability distribution over the rewards (i.e. for each state-action pair, the agent receives some reward with \(p(r) = 1\))), \(p(s', r | s, a) = p(s' | s, a)\).
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.5}
 \subsubsection*{Q}
@@ -75,6 +86,9 @@ for episodic tasks this becomes:
 \begin{equation}
 \sum_{s' \in S^+} \sum_{r \in R} p(s', r | s, a) = 1, \forall s \in S, a \in A(s)
 \end{equation}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.6}
 \subsubsection*{Q}
@@ -94,6 +108,9 @@ G_t = -\sum_{K\in\mathcal{K}} \gamma^{K-1}
 \end{equation}
 
 where \(\mathcal{K}\) is the set of times where the task is failed. Note this reward will increase in the long run, irrespective of improved performance. Designing this as a continuous task does not therefore make sense here.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.7}
 \subsubsection*{Q}
@@ -101,6 +118,9 @@ Imagine that you are designing a robot to run a maze. You decide to give it a re
 
 \subsubsection*{A}
 We have designed the reward such that it receives +1 only once it has exited the maze, and are therefore not incentivising it to learn how to exit the maze faster. To do so, we would need to provide a negative reward proportional to time in the maze e.g. -1 per timestep.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.8}
 \subsubsection*{Q}
@@ -124,6 +144,9 @@ G_1 = 2 + (0.5 \times 8) = 6
 G_0 = -1 + (0.5 \times 6) = 2
 $
 Note our expected cumulative reward \(G_t\) depends greatly on our instant reward \(G_{t+1}\) because it is not  discounted.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.9}
 \subsubsection*{Q}
@@ -150,7 +173,9 @@ and
 G_1 &= 7 + \frac{7}{0.1} \\
 &= 77\\
 \end{align}
-
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.10}
 \subsubsection*{Q}
@@ -183,6 +208,9 @@ and in our special case $a = 0$ so:
 \begin{equation}
 s = G_t =  \frac{1}{1 - \gamma}
 \end{equation}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.11}
 \subsubsection*{Q}
@@ -191,6 +219,9 @@ If the current state is $S_t$, and actions are selected according to a stochasti
 \subsubsection*{A}
 $
 \mathbb{E}_\pi[R_{t+1} | s_t] = \sum_{a} \pi(a | s) \sum_{s'} \sum_{r} p(s', r | s, a) [r] 
+$
+$
+\hfill \blacksquare
 $
 
 \subsection{Exercise 3.12}
@@ -202,6 +233,9 @@ The state value function \(v_\pi\) is equal to the expected cumulative return fr
 $
 v_\pi = \sum_{a} \pi(a | s) q_\pi(s,a) 
 $
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.13}
 \subsubsection*{Q}
@@ -211,6 +245,9 @@ Give an equation for $q_\pi$ in terms of $v_\pi$ and the four-argument $p$.
 Given an action $a$, the state-action value function is the probability distributions over the possible next states and rewards from that action, times the one-step reward and the discounted state value function at the next timestep:
 $
 q_\pi = \sum_{s' \in \mathcal{S}} \sum_{r \in \mathcal{R}} p(s', r | s, a) [r + \gamma v_\pi(s_{t+1})]
+$
+$
+\hfill \blacksquare
 $
 
 \subsection{Exercise 3.14}
@@ -234,6 +271,9 @@ for the centre square in Figure \ref{fig:3.14} we get the following:
 v_\pi(s) &= 0.25 \left[0.9 \times 2.3\right] + 0.25 \left[0.9 \times 0.7\right] + 0.25 \left[0.9 \times 0.4\right] + 0.25 \left[0.9 \times -0.4\right] \\
 			&= 0.68 \approx 0.7 \\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.15}
 \subsubsection*{Q}
@@ -256,6 +296,9 @@ Expected cumulative reward from every state receives a constant additive term. \
 v_c &= \mathbb{E}\left[\sum_{k=0}^{\infty}\gamma^k c\right]\\
 &= \frac{c}{1 - \gamma}\\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.16}
 \subsubsection*{Q}
@@ -263,6 +306,9 @@ Now consider adding a constant $c$ to all the rewards in an episodic task, such 
 
 \subsubsection*{A}
 In the episodic task adding a constant to all rewards does affect the agent. Since the cumulative reward now depends on the length of the episode ($G_t = \sum_{k=t+1}^{T} \gamma^{k-t-1}R_k $), timesteps that incur positive rewards act to lengthen the episode and vice versa. In the maze running example, we may have chosen to give the agent -1 reward at each timestep to ensure it completes the task quickly. If we add $c=2$ to every reward such that the reward at each timestep is now positive, the agent is now incentivised to not find the exit, and continue collecting intermediate rewards indefinitely. 
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.17}
 \begin{figure}[h!]
@@ -281,6 +327,9 @@ q_\pi(s,a) &= \mathbb{E}_\pi[G_t | S_t = s, A_t = a] \\
 &= \sum_{s', r} p(s', r | s, a) [r + \gamma \mathbb{E}_\pi[G_{t+1} | s', a']] \\
 &= \sum_{s', r} p(s', r | s, a) [r + \gamma q_\pi(s', a')] \\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.18}
 \subsubsection*{Q}
@@ -295,6 +344,9 @@ q_\pi(s,a) &= \mathbb{E}_\pi[G_t | S_t = s, A_t = a] \\
 v_\pi(s) = \mathbb{E}_\pi \left[q_\pi(s,a)\right] 
 v_\pi(s) = \sum_{a} \pi(a|s) q_\pi(s,a)
 \end{equation}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.19}
 \subsubsection*{Q}
@@ -309,6 +361,9 @@ v_\pi(s) = \sum_{a} \pi(a|s) q_\pi(s,a)
 q_\pi(s, a) &= \mathbb{E} \left[R_{t+1} + v_\pi(s') | S_{t} = s)\right] \\
 &= \sum_{s', r} p(s', r | s, a) [r +v_\pi(s')] \\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.20}
 \subsubsection*{Q}
@@ -318,11 +373,13 @@ q_\pi(s, a) &= \mathbb{E} \left[R_{t+1} + v_\pi(s') | S_{t} = s)\right] \\
 	\caption{Value functions for golf.}
 	\label{fig:3.20}
 \end{figure}
-\subsubsection*{Q}
 Draw or describe the optimal state-value function for the golf example.
 
 \subsubsection*{A}
 Qualitatively, the optimal state-value function for golf (outlined by Figure \ref{fig:3.20}) would be derived from a policy that selected the driver for the first two shots (off-the green), then selected the putter for the final shot (on the green).
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.21}
 \subsubsection*{Q}
@@ -335,6 +392,9 @@ q_*(s,a)= \sum_{s', r} p(s', r | s, a) [r + \gamma \argmax_a q_*(s,a)]
 \end{equation}
 
 Since we have only one action($\mathnormal{putter}$), the argmax collapses to $v_*(s')$, and $q_*(s,a) = v_*(s)$ - illustrated in Figure \ref{fig:3.20}.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.22}
 \subsubsection*{Q}
@@ -383,6 +443,9 @@ v_{\pi_{right}} &= 0 + 0.5 \times 2 = 1  \\
 \end{align}
 
 So both polices are optimal.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.23}
 \subsubsection*{Q}
@@ -393,6 +456,9 @@ $
 q_*(s,a) =  \sum_{s',r} p(s',r | s, a) [r + \gamma \argmax_{a \in \mathcal{A}} q_*(s', a')]
 $
 where $\mathcal{A} = \{\mathnormal{search}, \mathnormal{wait}, \mathnormal{recharge}\}$
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.24}
 \subsubsection*{Q}
@@ -412,6 +478,9 @@ v_*(A) &= r + \gamma(v_*(A+1)) \\
  &= 10 + 0.9016(16) \\
  &= 24.426 \text{to 3 d.p.} \\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.25}
 \subsubsection*{Q}
@@ -423,6 +492,9 @@ v_*(s) = \max_{a \in \mathcal{A}} q_{\pi_*}(s,a)
 $
 
 i.e. returning to the diagram in exercise 3.18, $v_*$ is defined as selecting the action (in that case of a possible 3) that produces the highest state-action value function
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.26}
 \subsubsection*{Q}
@@ -431,6 +503,9 @@ Give an equation for $q_*$ in terms of $v_*$ and the four-argument $p$.
 \subsubsection*{A}
 $
 q_*(s,a) = \max \sum_{s', r} p(s', r | s, a)[r + v_*(s)]
+$
+$
+\hfill \blacksquare
 $
 
 \subsection{Exercise 3.27}
@@ -442,6 +517,9 @@ The optimal policy is the one that acts greedily w.r.t the optimal state-action 
 $
 \pi_*(a|s) = \max_{a \in \mathcal{A}(s)} q_*(s',a)
 $
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.28}
 \subsubsection*{Q}
@@ -452,6 +530,9 @@ The optimal policy is the one that acts greedily w.r.t the optimal state value f
 $
 \pi_*(a|s) = \max_{a \in \mathcal{A}(s)} \sum_{s', r} p(s', r | s, a)[r  v_*(s')]
 $
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 3.29}
 \subsubsection*{Q}
@@ -459,3 +540,6 @@ Rewrite the four Bellman equations for the four value functions ($v_\pi, v_*, q_
 
 \subsubsection*{A}
 tbc
+$
+\hfill \blacksquare
+$

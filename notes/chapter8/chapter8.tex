@@ -12,13 +12,6 @@ RL methods can be described as either \textit{model-based} or \textit{model-free
 	\item We can use models in place of the real environment to perform model-free learning safely i.e. using simulated experience rather than real experience.
 \end{itemize}
 
-\begin{figure} [h!]
-	\centering
-	\includegraphics[width=\textwidth]{/chapter8_1}
-	\caption{The framework for updating our policy using our model of the environment}
-	\label{fig: updating policy using model}
-\end{figure}
-
 \subsection{Dyna: Integrated Planning, Acting, and Learning}
 Instead of planning all possible future states permutation, we may want to plan over a small number of future timesteps. When we do this we will likely want to update both our policy and model \textit{online}. The canonical algorithm for doing so is \textbf{Dyna-Q}. 
 \begin{itemize}
@@ -26,6 +19,13 @@ Instead of planning all possible future states permutation, we may want to plan 
 \item Dyna-Q agents conduct direct RL, planning, model-learning and acting simultaneously. Planning and direct learning tend to use exactly the same machinery as each other e.g. $n$-step sarsa, and thus are closely linked. Figure \ref{fig: dyna} shows the generalised Dyna architecture.
 \item Planning (in Dyna Q) is the process of running our Q updates (from Q-learning) using our model. We select random states and actions previously taken, find the reward and next state using our model and make the Q update. We do this $n$ times for each timestep taken in the real environment, where $n$ is a hyper parameter. For each unit of real experience collected, we are updated our value function $n$ simultaneously.
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{/chapter8_1}
+	\caption{The framework for updating our policy using our model of the environment}
+	\label{fig: updating policy using model}
+\end{figure}
 
 \begin{figure}
 	\centering
@@ -42,15 +42,15 @@ Instead of planning all possible future states permutation, we may want to plan 
 \end{figure}
 
 \subsection{When the Model is Wrong}
-Often our model will be wrong. This can happen initially because the environment is stochastic and we haven't collected enough samples to evaluate this stochasticty accurately. Otherwise, it can happen because we've used function approximation (e.g. neural networks) to predict the model, which generally arrive with non-zero error. When the model is incorrect the planning process is likely to compute a suboptimal policy. Often the suboptimal policy quickly leads to the discovery and correction of modelling error, as when the agent takes actions prescribed by the planned policy in the real environment, it quickly finds the expected rewards are incorrect or do not exist. 
+Often our model will be wrong. This can happen initially because the environment is stochastic and we haven't collected enough samples to evaluate this stochasticity accurately. Otherwise, it can happen because we've used function approximation (e.g. neural networks) to predict the model, which generally arrive with non-zero error. When the model is incorrect the planning process is likely to compute a suboptimal policy. Often the suboptimal policy quickly leads to the discovery and correction of modelling error, as when the agent takes actions prescribed by the planned policy in the real environment, it quickly finds the expected rewards are incorrect or do not exist. 
 
 Issues arise when the environment changes to become \textit{better} or more favourable at some stage during learning. In these cases the optimal policy/route to goal remains unchanged, but there is an even better policy available that the agent may never access because it has no reason to doubt its previously learned optimal policy. To address this, another algorithm is proposed called Dyna-Q+. Here, the agent keeps track of the number of timesteps elapsed $\tau$ since a state-action pair had been selected, and, if sufficient time has elapsed, it is presumed that the dynamics of the environment from that state have changed. The modelled rewards for each state-action pair now take the form $r + k\sqrt{\tau}$ for some small $k$.
 
 \subsection{Prioritized Sweeping}
-Until now, updates made to the value function during planning have been made arbitrarily, that is to say, state-actions have been sampled uniformly from past experience regardless of how likely we are to visit those state-actions. It would be more useful to prioritize updates to the value function that would be most effected by the reward we have recently received. This general idea is termed \textit{backward focusing} of planning computations. If we prioritize the updates according to a measure of urgency and perform them in order of priority, we call this \textit{prioritized sweeping}. The prioritization queue is assesmbled based on the expected update to a state-value pair from a new reward. We then loop through this queue, and for each state-value pair, find the state-value pairs we would predict lead to it, and calculated \textit{their} expected update and add them to the queue. The additions to the queue are only made if the expected update is larger than some value $\theta$. In this way, we only plan based on state-value pairs whose value updates are non-trivial. This technique is regularly 5-10 times faster than Dyna-Q.
+Until now, updates made to the value function during planning have been made arbitrarily, that is to say, state-actions have been sampled uniformly from past experience regardless of how likely we are to visit those state-actions. It would be more useful to prioritize updates to the value function that would be most effected by the reward we have recently received. This general idea is termed \textit{backward focusing} of planning computations. If we prioritize the updates according to a measure of urgency and perform them in order of priority, we call this \textit{prioritized sweeping}. The prioritization queue is assembled based on the expected update to a state-value pair from a new reward. We then loop through this queue, and for each state-value pair, find the state-value pairs we would predict lead to it, and calculated \textit{their} expected update and add them to the queue. The additions to the queue are only made if the expected update is larger than some value $\theta$. In this way, we only plan based on state-value pairs whose value updates are non-trivial. This technique is regularly 5-10 times faster than Dyna-Q.
 
 \subsection{Expected vs. Sample Updates}
-This book began by discussing dynamic programming; a way of conducting policy evaluation and improvement given a distribution model of the environment. Then we discussed sampling methods like: monte carlo, temporal-difference methods and n-step bootstrapping to estimate value functions in the absence of a model. Implicit here, was the idea that a distribution model than can be used to compute expectations is better than sampling which often leads to higher variance through sampling error. But is this true? To properly assess the relative merits of expected and sample updates for planning we must control for their different computational requirements.
+This book began by discussing dynamic programming; a way of conducting policy evaluation and improvement given a distribution model of the environment. Then we discussed sampling methods like: Monte Carlo, temporal-difference methods and n-step bootstrapping to estimate value functions in the absence of a model. Implicit here, was the idea that a distribution model than can be used to compute expectations is better than sampling which often leads to higher variance through sampling error. But is this true? To properly assess the relative merits of expected and sample updates for planning we must control for their different computational requirements.
 
 In practice, the computation required by update operations is usually dominated by the number of state-action pairs at which $Q$ is evaluated. For a particular starting pair, $s, a$, let $b$ be the \textit{branching factor} (i.e. the number of possible next states, $s'$ for which $\hat{p}(s|s,a)>0$. Then an expected update of this pair requires roughly $b$ times as much computation as a sample update. If we have sufficient time to complete an expected update, it is usually better than that of $b$ sample updates because of the absence of sampling error. But if there is insufficient time, sampling is always better because some update is better than no update. The key question is therefore: given a unit of computational power, is it better to perform one expected update, or $b$ sample updates? An answer to this question is provide in Figure \ref{fig: samples vs expectations}. For large values of $b$ sampling has huge efficiency gains over expected updates. In reality this effect would be more pronounced as the values of the successor states would be estimates that are themselves updated. By causing estimates to be more accurate sooner, sample updates will have a second advantage in that the values backed up from the successor states will be more accurate.
 
@@ -69,7 +69,7 @@ A question arises around whether on-policy updates, that follow the model's tran
 \subsection{Real-time Dynamic Programming}
 Real-time dynamic programming (RTDP) is an on-policy trajectory-sampling version of the value iteration algorithm of dynamic programming (DP). Because the algorithm follows the on-policy distribution, our value iteration updates are more efficient that normal DP because we implicitly ignore irrelevant states to our policy in our updates. RTDP is guaranteed to find a policy that is optimal on the relevant states without visiting every state infinitely often, or even without visiting some states at all, under certain conditions. These are:
 \begin{itemize}
-	\item The intial value of every goal state is zero
+	\item The initial value of every goal state is zero
 	\item There exists at least one policy that guarantees that a goal state will be reached with probability one from any start state.
 	\item All rewards for transitions from non-goal states are strictly negative, and
 	\item All the initial values are equal to, or greater than, their optimal values (which can be satisfied by setting initial values to 0.)
@@ -101,7 +101,7 @@ The canonical decision time planning method is \textit{heuristic search}. For ea
 \end{figure}
 
 \subsection{Rollout Algorithms}
-Rollout algorithms apply Monte Carlo control to simulated trajectories that all begin at the current environment state. They estimate action values for a given policy by averaging the returns from many simulations in a model using the current policy. These algorithms, like heuristic search, make immediate use of these action value estimates then discard them, they do not attempt to estimate $q_*$ like monte carlo policy iteration as discussed in chapter 5. They take advantage of the mathematical properties of policy iteration discussed in chapter 4, that is, $\pi'$ > $\pi$ if both are identical except that $\pi'(s) = a \neq \pi(s)$ and $q_{\pi}(s,a) \geq v_\pi(s)$.
+Rollout algorithms apply Monte Carlo control to simulated trajectories that all begin at the current environment state. They estimate action values for a given policy by averaging the returns from many simulations in a model using the current policy. These algorithms, like heuristic search, make immediate use of these action value estimates then discard them, they do not attempt to estimate $q_*$ like Monte Carlo policy iteration as discussed in chapter 5. They take advantage of the mathematical properties of policy iteration discussed in chapter 4, that is, $\pi'$ > $\pi$ if both are identical except that $\pi'(s) = a \neq \pi(s)$ and $q_{\pi}(s,a) \geq v_\pi(s)$.
 
 The limited factor with these types of algorithms is always computational resource, which itself is dependent on the size of the state-space. However there are ways around this, including pruning the rollouts to only involve the most probable next states, or to truncate simulated trajectories so they do not run to the end of the episode.
 
@@ -123,14 +123,16 @@ Monte Carlo Tree Search (MCTS) is a rollout algorithm as described above, but wi
 	\item Sample updates are often more efficient than expected updates for large state-spaces with large branching factors (a measure of the expected number of possible next states from an action).
 	\item Trajectory sampling in our model can be used for planning. This can be useful when conducted on-policy, because we prioritise making updates to our value function that are particularly relevant to our policy.
 	\item Planning can be conducted pre-action selection, to update our value function and inform future action-selection, or it can be done at the time of action-selection. The former is called \textit{background planning} and the latter is called \textit{decision time planning}.
-	\item Examples of decision time planning include Heuristic Search (where value maximising actions are taken in a simulation of various next states, and backed up to the root node), Rollout Algorithms (where monte carlo rollouts are performed over many simulations of episodes and the value maximising action returned), or MCTS (a special case of rollout algorithms that effectively combines heuristic search over some small number of actions and then performs monte carlo rollouts thereafter).
+	\item Examples of decision time planning include Heuristic Search (where value maximising actions are taken in a simulation of various next states, and backed up to the root node), Rollout Algorithms (where Monte Carlo rollouts are performed over many simulations of episodes and the value maximising action returned), or MCTS (a special case of rollout algorithms that effectively combines heuristic search over some small number of actions and then performs Monte Carlo rollouts thereafter).
 	\item Decision time planning can be effective for tasks where low-latency action selection is not required. They are fundamentally limited by the time constraints on action-selection and on the available computational resource.
 \end{itemize}
 
-\subsection{Summary of Part 1}
+\subsection{Summary of Part I}
+Each of the methods presented this far in this textbook can be summarised on the continuum illustrated in Figure \ref{fig: part1 summary}.
+
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{/chapter8_7}
+	\includegraphics[width=0.75\textwidth]{/chapter8_7}
 	\caption{A slice through the space of reinforcement learning methods, highlighting the two of the most important dimensions explored in Part I of this book: the depth and width of the updates.}
 	\label{fig: part1 summary}
 \end{figure}

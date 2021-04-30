@@ -95,14 +95,14 @@ We can think of \(p(s', r | s, a)\) as the dynamics of our MDP, often called the
 \item Given future rewards are dependent on future actions, value functions are defined with respect to particular policies as the value of a state depends on the action an agent takes in said state.
 \item A \textit{policy} is a mapping from states to probabilities of selecting each possible action.
 \item RL methods specify how the agent's policy changes as a result of its experience.
-\item For MDPs, we can define nu-pi(s) formally as:
+\item For MDPs, we can define $v(\pi(s))$ formally as:
 \end{itemize}
 
 \begin{equation}
 v_\pi(s) = \mathbb{E}_\pi \left[G_t | S_t = s \right] = \mathbb{E}_\pi \left[\sum_{k=0}^{\infty} \gamma^k R_{t+k+1} | S_t = s\right]
 \end{equation}
 
-i.e. the expected future rewards, given state \(S_t\), and policy \(\pi\). We call \(v_\pi(s)\)the \textbf{state value function for policy \(pi\)}. Similarly, we can define the value of taking action \(a\) in state \(s\) under policy \(\pi\) as:
+i.e. the expected future rewards, given state \(S_t\), and policy \(\pi\). We call \(v_\pi(s)\)the \textit{state value function for policy} $\pi$. Similarly, we can define the value of taking action \(a\) in state \(s\) under policy \(\pi\) as:
 
 \begin{equation}
 q_\pi(s,a) = \mathbb{E}_\pi \left[G_t | S_t = s, A_t = a \right] = \mathbb{E}_\pi \left[\sum_{k=0}^{\infty} \gamma^k R_{t+k+1} | S_t = s, A_t = a \right]
@@ -110,11 +110,11 @@ q_\pi(s,a) = \mathbb{E}_\pi \left[G_t | S_t = s, A_t = a \right] = \mathbb{E}_\p
 
 i.e. the expected value, taking action \(a\) in state \(s\) then following policy \(\pi\).
 \begin{itemize}
-\item We call \(q_\pi\) the \textbf{action-value function for policy \(\pi\)}
+\item We call \(q_\pi\) the \textit{action-value function for policy \(\pi\)}
 \item Both value functions are estimated from experience.
 \end{itemize}
 
-A fundamental property of value functions used throughout reinforcement learning and dynamic programming is that they satisfy recursive relationships similar to that which we have already established for the return. This recursive relationship is characterised by the \textbf{Bellman Equation}:
+A fundamental property of value functions used throughout reinforcement learning and dynamic programming is that they satisfy recursive relationships similar to that which we have already established for the return. This recursive relationship is characterised by the \textit{Bellman Equation}:
 
 \begin{equation}
 v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s',r} p(s', r | s, a) \left[r + \gamma v_\pi(s')\right]
@@ -131,11 +131,11 @@ This recursion looks from one state through to all possible next states given ou
 \subsection{Optimal Policies and Value Functions}
 \begin{itemize}
 \item A policy \(\pi '\) is defined as better than policy pi if its expected return is higher for all states.
-\item There is always AT LEAST one policy that is better than or equal to all other policies - this is the \textit{optimal policy}.
-\item Optimal policies are denoted \(\pi*\)
-\item Optimal state-value functions are denoted \(v*\)
-\item Optimal action-value functions are denoted \(q*\)
-\item We can write \(q*\) in terms of \(v*\):
+\item There is always \textit{at least} one policy that is better than or equal to all other policies - this is the \textit{optimal policy}.
+\item Optimal policies are denoted \(\pi_*\)
+\item Optimal state-value functions are denoted \(v_*\)
+\item Optimal action-value functions are denoted \(q_*\)
+\item We can write \(q_*\) in terms of \(v_*\):
 \end{itemize}
 
 \begin{equation}
@@ -152,7 +152,7 @@ q_*(s) = \sum_{s',r} p(s', r | s, a) \left[r + \gamma \max_{a'} q_*(s', a') \rig
 \end{equation}
 
 \begin{itemize}
-\item Using \(v*\) the optimal expected long term return is turned into a quantity that is immediately available for each state. Hence a one-step-ahead search, acting greedily, yield the optimal long-term actions.
+\item Using \(v_*\) the optimal expected long term return is turned into a quantity that is immediately available for each state. Hence a one-step-ahead search, acting greedily, yield the optimal long-term actions.
 \item Fully solving the Bellman optimality equations can be hugely expensive, especially if the number of states is huge, as is the case with most interesting problems.
 \item Solving the Bellman optimality equation is akin to exhaustive search. We play out \textit{every} possible scenario until the terminal state and collect their expected reward. Our policy then defines the action that maximises this expected reward. 
 \item In the continuous case the Bellman optimality equation is unsolvable as the recursion on the next state's value function would never end.
@@ -171,7 +171,7 @@ q_*(s) = \sum_{s',r} p(s', r | s, a) \left[r + \gamma \max_{a'} q_*(s', a') \rig
 \item A state signal that succeeds in retaining all relevant information about the past is \textit{Markov}. 
 \item Markov Decision Processes (MDPs) are the mathematically idealised version of the RL problem. They have system dynamics: $p(s', r | s, a) = Pr \{R_{r+1} = r, S_{t+1} = s' | S_t, A_t\}$
 \item Policies are a (probabilistic) mapping from states to actions.
-\item Value functions estimate how good it is for an agent to be in a state ($v_\pi$) or to take an action from a state ($q_\pi$). They are always defined w.r.t policies as the value of a state depends on the policy one takes in that state. Value functions are the e\textit{expected cumulative sum of future rewards} from a state or state-action pair.
+\item Value functions estimate how good it is for an agent to be in a state ($v_\pi$) or to take an action from a state ($q_\pi$). They are always defined w.r.t policies as the value of a state depends on the policy one takes in that state. Value functions are the \textit{expected cumulative sum of future rewards} from a state or state-action pair.
 \item Knowing our policy and system dynamics, we can define the state value function is defined by the Bellman equation: $v_\pi(s) = \sum_{a} \pi(a|s) \sum_{s',r} p(s', r | s, a) \left[r + \gamma v_\pi(s')\right]$
 \item An optimal policy ($\pi_*$) is the policy that maximises expected cumulative reward from all states. From the optimal policy we can derive the optimal value functions $q_*$ and $v_*$.
 \end{itemize}

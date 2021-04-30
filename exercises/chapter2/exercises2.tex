@@ -1,16 +1,17 @@
-\section{Multi-armBandits}
+\section{Multi-arm Bandits}
 \subsection{Exercise 2.1}
 \subsubsection*{Q}
 In \(e\)-greedy action selection, for the case of two actions and \(e\) = 0.5, what is the probability that the greedy action is selected?
 
 \subsubsection*{A}
-\begin{itemize}
-	\item Greedy action selected with \(p\) = 0.5
-\end{itemize}
+Greedy action selected with \(p\) = 0.5
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.2}
 \subsubsection*{Q}
-Bandit example Consider a k-armed bandit problem with k = 4 actions, denoted 1, 2, 3, and 4. Consider applying to this problem a bandit algorithm using \(e\)-greedy action selection, sample-average action-value estimates, and initial estimates of \(Q_1(a)\) = 0, for all \(a\). Suppose the initial sequence of actions and rewards is A1 = 1, R1 = 1, A2 = 2, R2 = 1, A3 = 2, R3 = 2, A4 = 2, R4 = 2, A5 = 3, R5 = 0. On some of these time steps the \(e\) case may have occurred, causing an action to be selected at random. On which time steps did this definitely occur? On which time steps could this possibly have occurred?
+Bandit example Consider a k-armed bandit problem with k = 4 actions, denoted 1, 2, 3, and 4. Consider applying to this problem a bandit algorithm using \(e\)-greedy action selection, sample-average action-value estimates, and initial estimates of \(Q_1(a)\) = 0, for all \(a\). Suppose the initial sequence of actions and rewards is $A_1 = 1, R_1 = 1, A_2 = 2, R_2 = 1, A_3 = 2, R_3 = 2, A_4 = 2, R_4 = 2, A_5 = 3, R_5 = 0$. On some of these time steps the \(e\) case may have occurred, causing an action to be selected at random. On which time steps did this definitely occur? On which time steps could this possibly have occurred?
 
 \subsubsection*{A}
 \begin{table}[h!]
@@ -31,15 +32,20 @@ Bandit example Consider a k-armed bandit problem with k = 4 actions, denoted 1, 
 	\item Action selection at timesteps 0, 1 and 4 are random as they are not reward maximising - see Table \ref{table: ex2.2}.
 	\item Action selection at timestep 2 could be random as \(A_1\) is also reward maximising - see Table \ref{table: ex2.2}.
 \end{itemize}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.3}
 \subsubsection*{Q}
 In the comparison shown in Figure \ref{fig:chapter2_2}, which method will perform best in the long run in terms of cumulative reward and probability of selecting the best action? How much better will it be? Express your answer quantitatively.
 
 \subsubsection*{A}
-\begin{itemize}
-	\item In the limit of \(t \rightarrow \infty\), both non-zero \(e\)-greedy policies will learn the optimal action abd value function \(q*\). The policy with \(e\) = 0.01 will select the optimal action 10x more regularly than the policy with \(e\) = 0.1.
-\end{itemize}
+In the limit of \(t \rightarrow \infty\), both non-zero \(e\)-greedy policies will learn the optimal action abd value function \(q*\). The policy with \(e\) = 0.01 will select the optimal action 10x more regularly than the policy with \(e\) = 0.1.
+$
+\hfill \blacksquare
+$
+
 \subsection{Exercise 2.4}
 \subsubsection*{Q}
 If the step-size parameters, \(\alpha_n\), are not constant, then the estimate \(Q_n\) is a weighted average of previously received rewards with a weighting different from that given by (2.6). What is the weighting on each prior reward for the general case, analogous to (2.6), in terms of the sequence of step-size parameters?.
@@ -54,6 +60,9 @@ For a n-dependent \(\alpha\) we have:
 	&= \vdots \nonumber \\
 	&= \sum_{i}^{n} \alpha_n R_n - R_{n-1} \prod_{i}^{n} \alpha_n + Q_{1} \prod_{i}^{n}(1-\alpha_n) \\
 \end{align}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.5}
 \subsubsection*{Q}
@@ -67,6 +76,9 @@ Design and conduct an experiment to demonstrate the difficulties that sample-ave
 	\caption{Stationary versus varying stepsize \(alpha\) in a 10-armed bandit problem. We see that the constant stepsize parameter (exponential decay) performs better than the varying stepsize parameter as we place more weight on the recently observed (moving) values.}
 	\label{fig:ex2.5}
 \end{figure}
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.6}
 \begin{figure}[h!]
@@ -82,6 +94,9 @@ method? In other words, what might make this method perform particularly better 
 
 \subsubsection*{A}
 The optimistic greedy policy with explore on every initial step as all value estimates are greater than their true value. It is possible, therefore, that it randomly selects the optimal action and then immediately forgets it in favour of yet-to-be-explored actions. This explains the spike at timestep \(\approx 10\).
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.7}
 \subsubsection*{Q}
@@ -100,6 +115,9 @@ average without initial bias.
 
 \subsubsection*{A}
 If we recall our answer for Exercise 2.4 for varying stepsize, we see that \(Q_1\) is weighted by \(w = \prod_{i=1}^{\infty} (1 - \alpha_i)\). When \(i\) = 1, \(\beta_n\) = \(\alpha\), thus \(w \rightarrow 0 \forall i\) and \(Q_1\) no longer affects our estimate of \(Q_{n+1}\).
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.8}
 \subsubsection*{Q}
@@ -107,6 +125,10 @@ If we recall our answer for Exercise 2.4 for varying stepsize, we see that \(Q_1
 
 \subsubsection*{A}
 After 10 timesteps the UCB algorithm has explored all 10 actions as, until they are selected, their upper confidence bound is infinite (as \(N_t(a)\) = 0) as so it guarenteed to be selected once in the first 10 actions. At this point the agent has one sample to assess the expected value of each arm and the same confidence/uncertainty in each action. With c < 0 it is likely to pick the action with highest return from first sample, which will likely give it an similarly large reward, creating the spike. Now, the upper confidence bound for that action will decrease and the agent will select another, less valuable action, causing the decrease in performance at the next timestep.
+$
+\hfill \blacksquare
+$
+
 \subsection{Exercise 2.9}
 \subsubsection*{Q}
 Show that in the case of two actions, the soft-max distribution is the same as that given by the logistic, or sigmoid, function often used in statistics and artificial neural networks.
@@ -125,6 +147,9 @@ For two actions \(1\) and \(2\) this becomes:
 	&= \frac{1}{e^{H_t(1)}(1 + e^{-x}}  \\
 \end{align}
 i.e. the sigmoid function with $x = H_t(1) - H_t(2)$.
+$
+\hfill \blacksquare
+$
 
 \subsection{Exercise 2.10}
 \subsubsection*{Q}
@@ -133,3 +158,6 @@ Suppose you face a 2-armed bandit task whose true action values change randomly 
 \subsubsection*{A}
 Part 1): If we do not know whether we are in task A or B we could decide pick the same action each time to maximise expected reward. Selecting either action 1 or action 2 every time would provide an expected reward of 50. Picking actions randomly would also provide an expected reward of 50 in this example.
 Part 2): If we know we are in task A or B we can learn the optimal action for each (A(a) = 2 and B(a) = 1). Doing so would provide us a higher expected reward than the non-contextual case of 55.
+$
+\hfill \blacksquare
+$

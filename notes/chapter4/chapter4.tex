@@ -71,7 +71,7 @@ Generalised Policy Iteration is the process of letting policy evaluation and pol
 \begin{itemize}
 	\item \textit{Policy evaluation} is the iterative computation of a value function for a given policy. The value function is only truly evaluated in the limit.
 	\item \textit{Policy improvement} is the computation of an improved policy given the value function for an existing policy.
-	\item By combining the above we achieve \textit{Policy Iteration} and by performing each directly on the value function at each visit to a state we achieve \textit{Value iteration} - both of which can be used to obtain optimal value functions and policies given complete knowledge of a finite Markov Decision Process.
-	\item \textit{Generalised policy iteration} is the process of performing policy evaluation and improvement regardless of granularity - leading to convergence to the optimal value functions.
+	\item By combining the above we achieve \textit{Policy Iteration} and by performing each directly on the value function at each visit to a state we achieve \textit{Value Iteration} - both of which can be used to obtain optimal value functions and policies given complete knowledge of a finite Markov Decision Process.
+	\item \textit{Generalised Policy Iteration} is the process of performing policy evaluation and improvement regardless of granularity - leading to convergence to the optimal value functions.
 	\item DP methods operate in sweeps through the state space performing an \textit{expected update} operation at each state. These updates are based on expected values at all subsequent states and their probabilities of occurring. In general this idea is known as \textit{bootstrapping}, many RL methods bootstrap to update current beliefs from past beliefs.
 \end{itemize}
