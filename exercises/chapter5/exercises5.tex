@@ -130,7 +130,7 @@ We have $C_o = 0$ and $C_n = \sum_{k=1}^{n} W_k$. Therefore:
 \begin{align}
 V_{n+1} &= \frac{\sum_{k=1}^{n}W_k G_k}{C_n}\\
 V_{n+1}{C_n} &= \sum_{k=1}^{n}W_k G_k \\
-V_{n+1}{C_n} &= W_n G_n \sum_{k=1}^{n-1}W_k G_k \\
+V_{n+1}{C_n} &= W_n G_n + \sum_{k=1}^{n-1}W_k G_k \\
 V_{n+1}{C_n} &= W_n G_n + V_n \sum_{k=1}^{n-1}W_k \\
 V_{n+1}{C_n} &= W_n G_n + V_n C_{n-1} \\
 V_{n+1}{C_n} &= W_n G_n + V_n \left(C_n - W_n\right) \\
